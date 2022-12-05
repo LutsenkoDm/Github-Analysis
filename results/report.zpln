@@ -1,0 +1,3346 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%sh\ncd /home/hduser\nls",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "derby.log\nhadoop\nhive\nmetastore_db\nspark\nspark-warehouse\nzeppelin\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201043_916511393",
+      "id": "paragraph_1666558240640_1669180656",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:12627"
+    },
+    {
+      "text": "%sh\nhdfs dfs -ls /user/hduser",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Found 2 items\ndrwxr-xr-x   - hduser supergroup          0 2022-11-20 13:14 /user/hduser/.sparkStaging\n-rwxr-xr-x   1 dr.who supergroup   10715489 2022-11-16 12:54 /user/hduser/data.csv\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201043_215076735",
+      "id": "paragraph_1666559257322_1380838368",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12628"
+    },
+    {
+      "text": "%spark.sql\nSELECT * FROM csv.`/user/hduser/data.csv` LIMIT 10",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_c0": "string",
+                      "_c1": "string",
+                      "_c2": "string",
+                      "_c3": "string",
+                      "_c4": "string",
+                      "_c5": "string",
+                      "_c6": "string",
+                      "_c7": "string",
+                      "_c8": "string",
+                      "_c9": "string",
+                      "_c10": "string",
+                      "_c11": "string",
+                      "_c12": "string",
+                      "_c13": "string",
+                      "_c14": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "_c0\t_c1\t_c2\t_c3\t_c4\t_c5\t_c6\t_c7\t_c8\t_c9\t_c10\t_c11\t_c12\t_c13\t_c14\nvue-blu\tmusishui\t326\t0\t0\t2\tVue\tfalse\ttrue\t0\t0\t0\t0\tMIT License\tUI Component Library Base on Vue.js(2.x) and Bulma\npalo\tlorgine-li\t55118\t0\t0\t2\tC++\tfalse\ttrue\t0\t0\t0\t0\tApache License 2.0\tPalo，the MPP data warehouse\nScriptedRESTAPI\tankitnkitgupta348\t73\t0\t0\t1\tNULL\tfalse\ttrue\t0\t0\t0\t0\tNULL\tScriptedRESTAPI\nAwesome-Security-Gists\tP3t3rp4rk3r\t7\t0\t0\t0\tNULL\tfalse\ttrue\t0\t0\t0\t0\tNULL\tNULL\nbeauty-treatment-android-animations\tjiubadao\t9484\t0\t0\t2\tJava\tfalse\ttrue\t0\t0\t0\t0\tApache License 2.0\tSet of samples of views with slick interaction patterns and animations\nangular-cli\tzhongzhong0505\t5023\t0\t0\t2\tTypeScript\tfalse\ttrue\t0\t0\t0\t0\tMIT License\tCLI tool for Angular\nIntTest\tleogao\t40\t1\t1\t2\tBatchfile\ttrue\ttrue\t0\t0\t0\t0\tNULL\tIntTest for latency-test\nGeoQuiz\tevangelistafranco\t86\t0\t0\t0\tJava\ttrue\ttrue\t0\t0\t0\t0\tNULL\tNULL\nGalleryEditorTweaks\tmahotilo\t11\t0\t0\t2\tJavaScript\tfalse\ttrue\t0\t0\t0\t0\tGNU General Public License v2.0\tGallery Editor Admin UI plugin for Typesetter CMS\nhyperfox\tjitendersrivastava\t131\t0\t0\t2\tGo\tfalse\ttrue\t0\t0\t0\t0\tMIT License\tHTTP/HTTPs MITM proxy and traffic recorder with on-the-fly TLS cert generation.\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201043_1891092793",
+      "id": "paragraph_1666561712149_134416920",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12629"
+    },
+    {
+      "text": "%spark.sql\nselect _c1 as name from csv.`/user/hduser/data.csv` limit 10\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "name": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "name\nmusishui\nlorgine-li\nankitnkitgupta348\nP3t3rp4rk3r\njiubadao\nzhongzhong0505\nleogao\nevangelistafranco\nmahotilo\njitendersrivastava\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201043_1455397251",
+      "id": "paragraph_1668603467630_16389004",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12630"
+    },
+    {
+      "text": "%spark.sql\nselect * from csv.`/user/hduser/data.csv` where _c6 = \"Go\" and _c3 > 1000 and _c4 > 1000 limit 10",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T12:22:02+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "scatterChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_c0": "string",
+                      "_c1": "string",
+                      "_c2": "string",
+                      "_c3": "string",
+                      "_c4": "string",
+                      "_c5": "string",
+                      "_c6": "string",
+                      "_c7": "string",
+                      "_c8": "string",
+                      "_c9": "string",
+                      "_c10": "string",
+                      "_c11": "string",
+                      "_c12": "string",
+                      "_c13": "string",
+                      "_c14": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "_c0",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "_c1",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "_c0\t_c1\t_c2\t_c3\t_c4\t_c5\t_c6\t_c7\t_c8\t_c9\t_c10\t_c11\t_c12\t_c13\t_c14\noperator-lifecycle-manager\toperator-framework\t55577\t1400\t1400\t46\tGo\ttrue\tfalse\t506\t235\t193\t0\tApache License 2.0\tA management framework for extending Kubernetes with Operators\nspire\tspiffe\t18493\t1293\t1293\t84\tGo\ttrue\ttrue\t339\t185\t634\t0\tApache License 2.0\tThe SPIFFE Runtime Environment\nsquash\tsolo-io\t17784\t1691\t1691\t88\tGo\ttrue\ttrue\t106\t89\t0\t0\tApache License 2.0\tThe debugger for microservices\nkail\tboz\t142\t1601\t1601\t16\tGo\ttrue\ttrue\t82\t35\t0\t0\tMIT License\tkubernetes log viewer\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201043_1805053288",
+      "id": "paragraph_1668809768517_1579368362",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12631"
+    },
+    {
+      "text": "%spark.sql\nselect first(_c0) as name, first(_c6 IGNORE NULLS) as language, first(_c1) as owner, first(_c4) as watchers from csv.`/user/hduser/data.csv` where _c4 > (select avg(_c4) from csv.`/user/hduser/data.csv`) group by _c6 order by watchers ",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T12:21:53+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "scatterChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "first(_c0)": "string",
+                      "first(_c6)": "string",
+                      "first(_c1)": "string",
+                      "watchers": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "first(_c0)",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "first(_c6)",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_c0": "string",
+                      "_c1": "string",
+                      "_c2": "string",
+                      "_c3": "string",
+                      "_c4": "string",
+                      "_c5": "string",
+                      "_c6": "string",
+                      "_c7": "string",
+                      "_c8": "string",
+                      "_c9": "string",
+                      "_c10": "string",
+                      "_c11": "string",
+                      "_c12": "string",
+                      "_c13": "string",
+                      "_c14": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "first(_c0)\tfirst(_c6)\tfirst(_c1)\twatchers\nAutoUpdater\tVisual Basic\tMobiusDevelopment\t10\nOBR-2017\tEagle\tFeoSilva\t10\ncommunity\tNULL\tcrystal-community\t10\njetson_csi_cam\tCMake\tpeter-moran\t101\ntkcg\tFreeMarker\tfreedommedal\t11\nmetasploit-webapp\tEJS\tMister2Tone\t11\nhashit\tVala\tartemanufrij\t12\nice\tD\tshove70\t12\nSimpleGestureRecognition\tJupyter Notebook\tEvilPort2\t126\nbeamax\tC++\tlutzroeder\t13\nhpcl_document_latex_template\tTeX\txhHuang94\t13\nProcedural-Skybox\tShaderLab\tKumoKairo\t13\nExcalibur\tPowerShell\tDviros\t132\nAZReachabilityNotificatons\tSwift\tAfrozZaheer\t14\nwebassembly-game-boy\tWebAssembly\tbrendan-myers\t14\nAgar.io-cocos-lua\tLua\tsniperHW\t14\nReliableNetcode.NET\tC#\tGlaireDaggers\t141\nSAFE-ConfPlanner\tF#\tSAFE-Stack\t148\nprolint\tOpenEdge ABL\tjcaillon\t15\nheterosync\tCuda\tmattsinc\t15\ncmsc330fall17public\tOCaml\tanwarmamat\t16\nJekyll-and-Docker-Compose\tHTML\tjoeltennant\t16\nMikrotik\tRascal\tmaspurmikrotiker\t17\nfirehose\tElixir\trockwood\t18\nultratrack\tMATLAB\tmlp6\t21\nasync\tR\tgaborcsardi\t25\nairflow-dag-creation-manager-plugin\tJavaScript\tlattebank\t258\nAlienWhoopF7\tMakefile\tbrucesdad13\t29\noznetyazilim.github.io\tCSS\toznetyazilim\t3\ntf-ecs-demo\tHCL\tnpalm\t3\ndotfiles\tVim script\thezhizhen\t3\ngameWithMatches\tRen'Py\tNyashniyVladya\t3\nmulesoft-oauth2-scope-enforcer\tRAML\tn2ygk\t3\np5-Compiler-Lexer\tPerl\tCode-Hex\t3\nexpo\tPureScript\tneume-notation\t3\nchinese-copywriting-guidelines\tCoffeeScript\tRamyWu\t3\nmakalewebsite\tASP\tkralmachine\t3\nDBScripts\tPLpgSQL\tchinwobble\t3\nInstallousX\tObjective-C++\tArtikusHG\t3\ngamelib2d\tHaxe\tWiering\t3\nOPEtoCommutator\tMathematica\tgitshouvik\t3\nnf-hack17-tutorial\tNextflow\tnextflow-io\t32\nansible-my-fedora-workstation\tJinja\teRadical\t32\ncae-lab\tAssembly\tschoeberl\t34\ngarmin-otp-authenticator\tMonkey C\tch1bo\t36\nSQL-Server-on-Linux\tTSQL\tPacktPublishing\t4\ncfwheels-background-tasks\tColdFusion\tliquifusion\t4\ndcapp\tKotlin\tZhangQinglian\t4\nensemble\tScheme\tkdltr\t4\noscm-helm\tSmarty\tservicecatalog\t4\nTradeSystem-GHOST\tMQL5\tRenatoCastro0303\t4\nProperty-Agent\tVisual Basic .NET\tScippy\t4\nhighloadcup\tClojure\tigrishaev\t4\nmwbgrader\tRoff\tsfaroult\t4\nATLL-Formalization\tAgda\tMonoidalAttackTrees\t4\npsadminio-io_weblogic\tPuppet\tpsadmin-io\t4\nRobust-Visual-Tracking-via-Co-trained-Kernelized-Correlation-Filters\tMatlab\tZhangLeUestc\t4\nTeched17\tABAP\tjasper07\t42\nEpub\tObjective-C\tKingOfZhang\t42\nUnix-Net\tC\twonderspig\t45\nAsteroids\tGDScript\tKAKwit\t5\nstore-front-h5-prepare\tVue\tguopengfei116\t5\nCL\tCommon Lisp\tHatsunespica\t5\nclique\tErlang\temqxarchive\t5\nGitlab\tShell\tchmodx\t5\nMarXet\tSQF\tWolfkillArcadia\t5\nbullet-sys\tRust\telrnv\t5\nvault-exfiltrate\tGo\tslingamn\t51\nmvp-template\tSCSS\tlaunchany\t56\nTOE\tVerilog\thpb-project\t56\nmakegirls.moe_web\tMetal\tiMisty\t6\nrakuten\tHaskell\tmatsubara0507\t6\nVDHL-SD-Library\tVHDL\tsimon-77\t6\nTitanClock-RGB\tArduino\tjotatsu\t6\nblog\tPLSQL\tdgielis\t6\nGLSLPostEffects\tGLSL\trystylee\t6\nG940LEDControl\tPascal\tMvRens\t6\nflutter-examples\tDart\tnisrulz\t6219\ngrpcakkastream\tScala\tbtlines\t67\nada-auth\tCartoCSS\treznikmm\t7\nSexLab-Separate-Orgasm\tPapyrus\tak86\t7\nnim-importc-helpers\tNim\tfredrikhr\t7\ndumb-diff\tEmacs Lisp\tjacktasia\t7\ngcam\tSmali\tamirzaidi\t70\nhott3\tLean\tgebner\t70\nelm-syntax-highlight\tElm\tpablohirafuji\t71\npipeline-library-demo\tGroovy\ttutorialworks\t73\nDockerfiles\tApacheConf\ttongsq\t8\ntoka\tCrystal\tPapierkorb\t8\nwebsite-icbm\tTypeScript\tNeufund\t8\nRichCode.ahk\tAutoHotkey\tG33kDude\t8\ndocker-awesome-wordpress\tDockerfile\tjulianxhokaxhiu\t8\nonline-users-api\tRuby\tjeanpaulsio\t8\nTacticalShield\tSourcePawn\tKeplyx\t8\nJuliaKara.jl\tJulia\tsebastianpech\t9\nCRC16ForPHP\tPHP\tyangyiyuan\t9\nlaptop-automator-v2\tPython\tJogleLew\t9\nspring-session\tJava\tyouzhibing\t9\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201043_1634707922",
+      "id": "paragraph_1668810247688_1846146271",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12632"
+    },
+    {
+      "text": "%spark.sql\nselect max(_c7), first(_c0) from csv.`/user/hduser/data.csv` as test  where exists (select 1 from csv.`/user/hduser/data.csv`as rt where test._c1 = rt._c1)",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "max(_c7)": "string",
+                      "first(_c0)": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "max(_c7)\tfirst(_c0)\ntrue\tvue-blu\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201043_336569462",
+      "id": "paragraph_1668811569734_1617184419",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12633"
+    },
+    {
+      "text": "%spark.sql\nselect max(_c11) as maxTotalCommitsAll, min(_c11) as minTotalCommitsAll, _c6 as language from csv.`/user/hduser/data.csv` where _c3 > (select avg(_c3) from csv.`/user/hduser/data.csv`) group by(_c6) order by first(_c3)",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T12:21:37+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "max(_c11)": "string",
+                      "min(_c11)": "string",
+                      "_c6": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "max(_c11)",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "min(_c11)",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "max(_c11)\tmin(_c11)\t_c6\n0\t0\tVisual Basic\n0\t0\tEagle\n97\t0\tNULL\n0\t0\tCMake\n0\t0\tFreeMarker\n0\t0\tEJS\n0\t0\tVala\n0\t0\tD\n84\t0\tJupyter Notebook\n93\t0\tC++\n4\t0\tTeX\n0\t0\tShaderLab\n3\t0\tPowerShell\n6\t0\tSwift\n0\t0\tWebAssembly\n7\t0\tLua\n70\t0\tC#\n45\t0\tF#\n0\t0\tOpenEdge ABL\n10\t0\tCuda\n0\t0\tOCaml\n8\t0\tHTML\n0\t0\tRascal\n5\t0\tElixir\n39\t0\tMATLAB\n22\t0\tR\n9\t0\tJavaScript\n40\t0\tMakefile\n53\t0\tCSS\n0\t0\tHCL\n2\t0\tVim script\n0\t0\tRen'Py\n1\t1\tRAML\n0\t0\tPerl\n0\t0\tPureScript\n0\t0\tCoffeeScript\n0\t0\tASP\n0\t0\tPLpgSQL\n0\t0\tObjective-C++\n2\t2\tHaxe\n0\t0\tMathematica\n0\t0\tNextflow\n7\t0\tJinja\n12\t0\tAssembly\n26\t26\tMonkey C\n4\t4\tTSQL\n23\t0\tColdFusion\n3086\t0\tKotlin\n0\t0\tScheme\n0\t0\tSmarty\n0\t0\tMQL5\n3\t3\tVisual Basic .NET\n0\t0\tClojure\n0\t0\tRoff\n0\t0\tAgda\n69\t0\tPuppet\n0\t0\tMatlab\n0\t0\tABAP\n1\t0\tObjective-C\n8\t0\tC\n0\t0\tGDScript\n0\t0\tVue\n0\t0\tCommon Lisp\n3\t0\tErlang\n8\t0\tShell\n1\t1\tSQF\n7\t0\tRust\n88\t0\tGo\n8\t0\tSCSS\n0\t0\tVerilog\n0\t0\tMetal\n9\t0\tHaskell\n0\t0\tVHDL\n0\t0\tArduino\n0\t0\tPLSQL\n0\t0\tGLSL\n0\t0\tPascal\n23\t0\tDart\n0\t0\tScala\n10\t10\tCartoCSS\n18\t18\tPapyrus\n0\t0\tNim\n21\t0\tEmacs Lisp\n0\t0\tSmali\n0\t0\tLean\n5\t0\tElm\n5\t0\tGroovy\n0\t0\tApacheConf\n0\t0\tCrystal\n71\t0\tTypeScript\n0\t0\tAutoHotkey\n0\t0\tDockerfile\n49\t0\tRuby\n0\t0\tSourcePawn\n9\t0\tJulia\n8\t0\tPHP\n97\t0\tPython\n64\t0\tJava\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201043_496514894",
+      "id": "paragraph_1668812335702_354092397",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12634"
+    },
+    {
+      "text": "%spark.sql\nselect _c6 as language, max(_c3) as stargazers from csv.`/user/hduser/data.csv` where _c9 > 1000 group by language order by stargazers limit 10 \n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T12:21:33+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 300,
+              "optionOpen": true,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "language": "string",
+                      "m": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": true
+                },
+                "pieChart": {}
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "language",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "m",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "language\tm\nTypeScript\t15233\nJava\t2749\nDart\t6219\nNULL\t8461\nC++\t85989\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201044_1188232551",
+      "id": "paragraph_1668812269239_1655278715",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12635"
+    },
+    {
+      "text": "%spark.sql\nselect max(_c10) as open_issues,  _c6 as language from csv.`/user/hduser/data.csv` group by _c6 limit 10 ",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T12:21:29+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "scatterChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "g": "string",
+                      "_c6": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "g",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "_c6",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "max(_c10)": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "g\t_c6\n9\tC#\n6\tEJS\n0\tHack\n0\tTerra\n0\tStandard ML\n5\tMakefile\n13\tProcessing\n0\tRascal\n0\tVBA\n0\tCuda\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201044_915268901",
+      "id": "paragraph_1668813255632_879927219",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12636"
+    },
+    {
+      "text": "%spark.sql\nselect first(_c0), first(_c6), max(_c2) as m from csv.`/user/hduser/data.csv` order by m",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T12:21:19+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "first(_c0)": "string",
+                      "first(_c6)": "string",
+                      "m": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "first(_c0)",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "first(_c6)",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "first(_c0)\tfirst(_c6)\tm\nvue-blu\tVue\t9999\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201045_2032533314",
+      "id": "paragraph_1668813404705_276827948",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12637"
+    },
+    {
+      "text": "%spark.sql\nselect * from csv.`/user/hduser/data.csv` where _c3 > 1000 and (_c7 = \"true\" or _c8 = \"true\") limit",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T12:21:14+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "scatterChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_c0": "string",
+                      "_c1": "string",
+                      "_c2": "string",
+                      "_c3": "string",
+                      "_c4": "string",
+                      "_c5": "string",
+                      "_c6": "string",
+                      "_c7": "string",
+                      "_c8": "string",
+                      "_c9": "string",
+                      "_c10": "string",
+                      "_c11": "string",
+                      "_c12": "string",
+                      "_c13": "string",
+                      "_c14": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "_c0",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "_c1",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "_c0\t_c1\t_c2\t_c3\t_c4\t_c5\t_c6\t_c7\t_c8\t_c9\t_c10\t_c11\t_c12\t_c13\t_c14\nAndroid-Studio-Plugins\tbalsikandar\t81\t2207\t2207\t98\tJava\ttrue\ttrue\t211\t6\t0\t0\tApache License 2.0\tThis is a list of all awesome and useful android studio plugins.\nflutter-examples\tnisrulz\t96419\t6219\t6219\t209\tDart\ttrue\ttrue\t1589\t16\t19\t1\tApache License 2.0\t[Examples] Simple basic isolated apps, for budding flutter devs.\nhtml-sketchapp\thtml-sketchapp\t1960\t1835\t1835\t72\tJavaScript\ttrue\ttrue\t118\t57\t0\t0\tMIT License\tHTML to Sketch export solution\nvim-vixen\tueokande\t5096\t2121\t2121\t39\tTypeScript\ttrue\ttrue\t145\t261\t71\t44\tMIT License\tAccelerates your web browsing with Vim power!!\ngarland-view-android\tRamotion\t16511\t1853\t1853\t59\tJava\ttrue\ttrue\t262\t0\t0\t0\tMIT License\t:octocat: ≡ GarlandView seamlessly transitions between multiple lists of content. Made by @Ramotion\noperator-lifecycle-manager\toperator-framework\t55577\t1400\t1400\t46\tGo\ttrue\tfalse\t506\t235\t193\t0\tApache License 2.0\tA management framework for extending Kubernetes with Operators\nDataSciComp\tiphysresearch\t3679\t1644\t1644\t196\tJavaScript\ttrue\tfalse\t315\t7\t0\t0\tMIT License\tA collection of popular Data Science Challenges/Competitions || Countdown timers to keep track of the entry deadlines.\nterminal\tmicrosoft\t116702\t85989\t85989\t1296\tC++\ttrue\ttrue\t7559\t1531\t684\t0\tMIT License\tThe new Windows Terminal and the original Windows console host, all in the same place!\nmicroservices\tDocsHome\t7150\t4826\t4826\t263\tNULL\ttrue\ttrue\t974\t2\t0\t0\tNULL\tMicroservices from Design to Deployment 中文版 《微服务：从设计到部署》\nspire\tspiffe\t18493\t1293\t1293\t84\tGo\ttrue\ttrue\t339\t185\t634\t0\tApache License 2.0\tThe SPIFFE Runtime Environment\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201045_1995319235",
+      "id": "paragraph_1668813592405_286843425",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12638"
+    },
+    {
+      "text": "%spark.sql\nselect _c3 as Stargazers , _c0 as ReposName from csv.`/user/hduser/data.csv` order by _c3 desc limit 10\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T12:21:07+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "Stargazers0",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "ReposName1",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1,
+                      "paginationPageSize": 250
+                    }
+                  },
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Stargazers": "string",
+                      "ReposName": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "90"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "rotate",
+                  "style": "stack"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "ReposName",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "Stargazers",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Stargazers": "string",
+                      "ReposName": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "Stargazers\tReposName\n99\tDtBlkFx\n98\telastic-job\n97\tclipboard-inspector\n96\tactiverecord-precounter\n96\tairflow-tutorial\n95\treact-breakpoints\n94\tphp-rs\n94\tOffice8570\n93\tgo-clean-arch-grpc\n93\tbigtest\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201045_225007666",
+      "id": "paragraph_1668813740931_329203550",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12639"
+    },
+    {
+      "text": "%spark.sql\nselect * from csv.`/user/hduser/data.csv`  where _c11 = _c12 limit 10",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T12:21:02+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_c0": "string",
+                      "_c1": "string",
+                      "_c2": "string",
+                      "_c3": "string",
+                      "_c4": "string",
+                      "_c5": "string",
+                      "_c6": "string",
+                      "_c7": "string",
+                      "_c8": "string",
+                      "_c9": "string",
+                      "_c10": "string",
+                      "_c11": "string",
+                      "_c12": "string",
+                      "_c13": "string",
+                      "_c14": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "_c0",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "_c1",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "_c0\t_c1\t_c2\t_c3\t_c4\t_c5\t_c6\t_c7\t_c8\t_c9\t_c10\t_c11\t_c12\t_c13\t_c14\nvue-blu\tmusishui\t326\t0\t0\t2\tVue\tfalse\ttrue\t0\t0\t0\t0\tMIT License\tUI Component Library Base on Vue.js(2.x) and Bulma\npalo\tlorgine-li\t55118\t0\t0\t2\tC++\tfalse\ttrue\t0\t0\t0\t0\tApache License 2.0\tPalo，the MPP data warehouse\nScriptedRESTAPI\tankitnkitgupta348\t73\t0\t0\t1\tNULL\tfalse\ttrue\t0\t0\t0\t0\tNULL\tScriptedRESTAPI\nAwesome-Security-Gists\tP3t3rp4rk3r\t7\t0\t0\t0\tNULL\tfalse\ttrue\t0\t0\t0\t0\tNULL\tNULL\nbeauty-treatment-android-animations\tjiubadao\t9484\t0\t0\t2\tJava\tfalse\ttrue\t0\t0\t0\t0\tApache License 2.0\tSet of samples of views with slick interaction patterns and animations\nangular-cli\tzhongzhong0505\t5023\t0\t0\t2\tTypeScript\tfalse\ttrue\t0\t0\t0\t0\tMIT License\tCLI tool for Angular\nIntTest\tleogao\t40\t1\t1\t2\tBatchfile\ttrue\ttrue\t0\t0\t0\t0\tNULL\tIntTest for latency-test\nGeoQuiz\tevangelistafranco\t86\t0\t0\t0\tJava\ttrue\ttrue\t0\t0\t0\t0\tNULL\tNULL\nGalleryEditorTweaks\tmahotilo\t11\t0\t0\t2\tJavaScript\tfalse\ttrue\t0\t0\t0\t0\tGNU General Public License v2.0\tGallery Editor Admin UI plugin for Typesetter CMS\nhyperfox\tjitendersrivastava\t131\t0\t0\t2\tGo\tfalse\ttrue\t0\t0\t0\t0\tMIT License\tHTTP/HTTPs MITM proxy and traffic recorder with on-the-fly TLS cert generation.\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201045_97740907",
+      "id": "paragraph_1668813871386_1168014965",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12640"
+    },
+    {
+      "text": "print(\"%html <h2> Top 10 popular languages </h2>\")\nz show languages.limit(10)",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 8,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 710,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "language": "string",
+                      "reposNumber": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<h2> Top 10 popular languages </h2>\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "language\treposNumber\nJavaScript\t15547\nJava\t11121\nPython\t8458\nHTML\t7163\nPHP\t4718\nC++\t3549\nRuby\t2935\nCSS\t2863\nC#\t2618\nC\t2601\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201046_2126969007",
+      "id": "paragraph_1668959647012_433295318",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12641"
+    },
+    {
+      "text": "print(\"%html <h2> Popular languages </h2>\")\nval languages = spark.sql(\n    \"select distinct(_c6) as language, count(_c6) as reposNumber from csv.`/user/hduser/data.csv` where _c6 != \\\"NULL\\\" group by language order by CAST(reposNumber AS long) desc\"\n)\nz show languages\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:26:52+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 4,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "editorHide": false,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 656,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "language": "string",
+                      "reposNumber": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-90"
+                  },
+                  "xLabelStatus": "rotate",
+                  "stacked": true
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "language",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "reposNumber",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "2": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 90.25,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "language": "string",
+                      "reposNumber": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "language",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "reposNumber",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "3": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "language": "string",
+                      "reposNumber": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.lang.RuntimeException\n\tat org.apache.zeppelin.interpreter.remote.PooledRemoteClient.callRemoteFunction(PooledRemoteClient.java:114)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.callRemoteFunction(RemoteInterpreterProcess.java:99)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.interpret(RemoteInterpreter.java:208)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:486)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:71)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:182)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:750)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201046_847983678",
+      "id": "paragraph_1668959232361_1264458547",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateStarted": "2022-12-03T11:26:52+0000",
+      "dateFinished": "2022-12-03T11:26:52+0000",
+      "status": "ERROR",
+      "$$hashKey": "object:12642"
+    },
+    {
+      "text": "\nval selectedLanguage = z.select(\"Choose Language\", languages.map(l => (l.getString(0), l.getString(0))).collect())\nprint(\"%html <h2> Top 15 largest \" + selectedLanguage + \" repositories </h2>\")\n\nval largestTopRepositories = spark.sql(\n    \"select _c0 as ReposName, first(_c2) as size from csv.`/user/hduser/data.csv`  where _c6 = \" + '\\\"' + selectedLanguage +  '\\\"' + \" group by _c0 order by CAST(size AS long) desc limit 15\"\n)\n\nz.show(largestTopRepositories)\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "editorHide": false,
+        "runOnSelectionChange": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 390,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "ReposName": "string",
+                      "size": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "ReposName",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "size",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "1": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 364,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "ReposName": "string",
+                      "size": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "ReposName",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "size",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {
+          "formName": "defaultValue",
+          "name": "Java",
+          "Top 10 Repositories by language": "Go",
+          "Top 10 largest repositories by language": "Go",
+          "day": "JavaScript",
+          "Language": "C#",
+          "Choose language": "JavaScript",
+          "Choose Language": "JavaScript"
+        },
+        "forms": {
+          "Choose Language": {
+            "type": "Select",
+            "options": [
+              {
+                "value": "JavaScript",
+                "displayName": "JavaScript",
+                "$$hashKey": "object:12840"
+              },
+              {
+                "value": "Java",
+                "displayName": "Java",
+                "$$hashKey": "object:12841"
+              },
+              {
+                "value": "Python",
+                "displayName": "Python",
+                "$$hashKey": "object:12842"
+              },
+              {
+                "value": "HTML",
+                "displayName": "HTML",
+                "$$hashKey": "object:12843"
+              },
+              {
+                "value": "PHP",
+                "displayName": "PHP",
+                "$$hashKey": "object:12844"
+              },
+              {
+                "value": "C++",
+                "displayName": "C++",
+                "$$hashKey": "object:12845"
+              },
+              {
+                "value": "Ruby",
+                "displayName": "Ruby",
+                "$$hashKey": "object:12846"
+              },
+              {
+                "value": "CSS",
+                "displayName": "CSS",
+                "$$hashKey": "object:12847"
+              },
+              {
+                "value": "C#",
+                "displayName": "C#",
+                "$$hashKey": "object:12848"
+              },
+              {
+                "value": "C",
+                "displayName": "C",
+                "$$hashKey": "object:12849"
+              },
+              {
+                "value": "Shell",
+                "displayName": "Shell",
+                "$$hashKey": "object:12850"
+              },
+              {
+                "value": "TypeScript",
+                "displayName": "TypeScript",
+                "$$hashKey": "object:12851"
+              },
+              {
+                "value": "Jupyter Notebook",
+                "displayName": "Jupyter Notebook",
+                "$$hashKey": "object:12852"
+              },
+              {
+                "value": "Go",
+                "displayName": "Go",
+                "$$hashKey": "object:12853"
+              },
+              {
+                "value": "Swift",
+                "displayName": "Swift",
+                "$$hashKey": "object:12854"
+              },
+              {
+                "value": "Objective-C",
+                "displayName": "Objective-C",
+                "$$hashKey": "object:12855"
+              },
+              {
+                "value": "R",
+                "displayName": "R",
+                "$$hashKey": "object:12856"
+              },
+              {
+                "value": "Vue",
+                "displayName": "Vue",
+                "$$hashKey": "object:12857"
+              },
+              {
+                "value": "Scala",
+                "displayName": "Scala",
+                "$$hashKey": "object:12858"
+              },
+              {
+                "value": "Kotlin",
+                "displayName": "Kotlin",
+                "$$hashKey": "object:12859"
+              },
+              {
+                "value": "Lua",
+                "displayName": "Lua",
+                "$$hashKey": "object:12860"
+              },
+              {
+                "value": "Matlab",
+                "displayName": "Matlab",
+                "$$hashKey": "object:12861"
+              },
+              {
+                "value": "Rust",
+                "displayName": "Rust",
+                "$$hashKey": "object:12862"
+              },
+              {
+                "value": "TeX",
+                "displayName": "TeX",
+                "$$hashKey": "object:12863"
+              },
+              {
+                "value": "Arduino",
+                "displayName": "Arduino",
+                "$$hashKey": "object:12864"
+              },
+              {
+                "value": "PowerShell",
+                "displayName": "PowerShell",
+                "$$hashKey": "object:12865"
+              },
+              {
+                "value": "Vim script",
+                "displayName": "Vim script",
+                "$$hashKey": "object:12866"
+              },
+              {
+                "value": "Makefile",
+                "displayName": "Makefile",
+                "$$hashKey": "object:12867"
+              },
+              {
+                "value": "Groovy",
+                "displayName": "Groovy",
+                "$$hashKey": "object:12868"
+              },
+              {
+                "value": "Elixir",
+                "displayName": "Elixir",
+                "$$hashKey": "object:12869"
+              },
+              {
+                "value": "Haskell",
+                "displayName": "Haskell",
+                "$$hashKey": "object:12870"
+              },
+              {
+                "value": "Perl",
+                "displayName": "Perl",
+                "$$hashKey": "object:12871"
+              },
+              {
+                "value": "CoffeeScript",
+                "displayName": "CoffeeScript",
+                "$$hashKey": "object:12872"
+              },
+              {
+                "value": "Emacs Lisp",
+                "displayName": "Emacs Lisp",
+                "$$hashKey": "object:12873"
+              },
+              {
+                "value": "Clojure",
+                "displayName": "Clojure",
+                "$$hashKey": "object:12874"
+              },
+              {
+                "value": "Assembly",
+                "displayName": "Assembly",
+                "$$hashKey": "object:12875"
+              },
+              {
+                "value": "CMake",
+                "displayName": "CMake",
+                "$$hashKey": "object:12876"
+              },
+              {
+                "value": "Batchfile",
+                "displayName": "Batchfile",
+                "$$hashKey": "object:12877"
+              },
+              {
+                "value": "Visual Basic",
+                "displayName": "Visual Basic",
+                "$$hashKey": "object:12878"
+              },
+              {
+                "value": "Julia",
+                "displayName": "Julia",
+                "$$hashKey": "object:12879"
+              },
+              {
+                "value": "Pascal",
+                "displayName": "Pascal",
+                "$$hashKey": "object:12880"
+              },
+              {
+                "value": "Erlang",
+                "displayName": "Erlang",
+                "$$hashKey": "object:12881"
+              },
+              {
+                "value": "Eagle",
+                "displayName": "Eagle",
+                "$$hashKey": "object:12882"
+              },
+              {
+                "value": "XSLT",
+                "displayName": "XSLT",
+                "$$hashKey": "object:12883"
+              },
+              {
+                "value": "Processing",
+                "displayName": "Processing",
+                "$$hashKey": "object:12884"
+              },
+              {
+                "value": "HCL",
+                "displayName": "HCL",
+                "$$hashKey": "object:12885"
+              },
+              {
+                "value": "Elm",
+                "displayName": "Elm",
+                "$$hashKey": "object:12886"
+              },
+              {
+                "value": "OCaml",
+                "displayName": "OCaml",
+                "$$hashKey": "object:12887"
+              },
+              {
+                "value": "Dockerfile",
+                "displayName": "Dockerfile",
+                "$$hashKey": "object:12888"
+              },
+              {
+                "value": "F#",
+                "displayName": "F#",
+                "$$hashKey": "object:12889"
+              },
+              {
+                "value": "ApacheConf",
+                "displayName": "ApacheConf",
+                "$$hashKey": "object:12890"
+              },
+              {
+                "value": "Roff",
+                "displayName": "Roff",
+                "$$hashKey": "object:12891"
+              },
+              {
+                "value": "SCSS",
+                "displayName": "SCSS",
+                "$$hashKey": "object:12892"
+              },
+              {
+                "value": "ASP",
+                "displayName": "ASP",
+                "$$hashKey": "object:12893"
+              },
+              {
+                "value": "Protocol Buffer",
+                "displayName": "Protocol Buffer",
+                "$$hashKey": "object:12894"
+              },
+              {
+                "value": "Common Lisp",
+                "displayName": "Common Lisp",
+                "$$hashKey": "object:12895"
+              },
+              {
+                "value": "Haxe",
+                "displayName": "Haxe",
+                "$$hashKey": "object:12896"
+              },
+              {
+                "value": "Verilog",
+                "displayName": "Verilog",
+                "$$hashKey": "object:12897"
+              },
+              {
+                "value": "Fortran",
+                "displayName": "Fortran",
+                "$$hashKey": "object:12898"
+              },
+              {
+                "value": "Dart",
+                "displayName": "Dart",
+                "$$hashKey": "object:12899"
+              },
+              {
+                "value": "PLpgSQL",
+                "displayName": "PLpgSQL",
+                "$$hashKey": "object:12900"
+              },
+              {
+                "value": "Cuda",
+                "displayName": "Cuda",
+                "$$hashKey": "object:12901"
+              },
+              {
+                "value": "Nginx",
+                "displayName": "Nginx",
+                "$$hashKey": "object:12902"
+              },
+              {
+                "value": "VHDL",
+                "displayName": "VHDL",
+                "$$hashKey": "object:12903"
+              },
+              {
+                "value": "Scheme",
+                "displayName": "Scheme",
+                "$$hashKey": "object:12904"
+              },
+              {
+                "value": "SQF",
+                "displayName": "SQF",
+                "$$hashKey": "object:12905"
+              },
+              {
+                "value": "Objective-C++",
+                "displayName": "Objective-C++",
+                "$$hashKey": "object:12906"
+              },
+              {
+                "value": "Smarty",
+                "displayName": "Smarty",
+                "$$hashKey": "object:12907"
+              },
+              {
+                "value": "PureScript",
+                "displayName": "PureScript",
+                "$$hashKey": "object:12908"
+              },
+              {
+                "value": "QML",
+                "displayName": "QML",
+                "$$hashKey": "object:12909"
+              },
+              {
+                "value": "D",
+                "displayName": "D",
+                "$$hashKey": "object:12910"
+              },
+              {
+                "value": "Rascal",
+                "displayName": "Rascal",
+                "$$hashKey": "object:12911"
+              },
+              {
+                "value": "ActionScript",
+                "displayName": "ActionScript",
+                "$$hashKey": "object:12912"
+              },
+              {
+                "value": "Crystal",
+                "displayName": "Crystal",
+                "$$hashKey": "object:12913"
+              },
+              {
+                "value": "Smali",
+                "displayName": "Smali",
+                "$$hashKey": "object:12914"
+              },
+              {
+                "value": "PLSQL",
+                "displayName": "PLSQL",
+                "$$hashKey": "object:12915"
+              },
+              {
+                "value": "ShaderLab",
+                "displayName": "ShaderLab",
+                "$$hashKey": "object:12916"
+              },
+              {
+                "value": "Puppet",
+                "displayName": "Puppet",
+                "$$hashKey": "object:12917"
+              },
+              {
+                "value": "DIGITAL Command Language",
+                "displayName": "DIGITAL Command Language",
+                "$$hashKey": "object:12918"
+              },
+              {
+                "value": "Smalltalk",
+                "displayName": "Smalltalk",
+                "$$hashKey": "object:12919"
+              },
+              {
+                "value": "SQLPL",
+                "displayName": "SQLPL",
+                "$$hashKey": "object:12920"
+              },
+              {
+                "value": "GDScript",
+                "displayName": "GDScript",
+                "$$hashKey": "object:12921"
+              },
+              {
+                "value": "Prolog",
+                "displayName": "Prolog",
+                "$$hashKey": "object:12922"
+              },
+              {
+                "value": "Vala",
+                "displayName": "Vala",
+                "$$hashKey": "object:12923"
+              },
+              {
+                "value": "IDL",
+                "displayName": "IDL",
+                "$$hashKey": "object:12924"
+              },
+              {
+                "value": "AutoHotkey",
+                "displayName": "AutoHotkey",
+                "$$hashKey": "object:12925"
+              },
+              {
+                "value": "SourcePawn",
+                "displayName": "SourcePawn",
+                "$$hashKey": "object:12926"
+              },
+              {
+                "value": "DM",
+                "displayName": "DM",
+                "$$hashKey": "object:12927"
+              },
+              {
+                "value": "Nim",
+                "displayName": "Nim",
+                "$$hashKey": "object:12928"
+              },
+              {
+                "value": "GLSL",
+                "displayName": "GLSL",
+                "$$hashKey": "object:12929"
+              },
+              {
+                "value": "OpenSCAD",
+                "displayName": "OpenSCAD",
+                "$$hashKey": "object:12930"
+              },
+              {
+                "value": "Perl 6",
+                "displayName": "Perl 6",
+                "$$hashKey": "object:12931"
+              },
+              {
+                "value": "Apex",
+                "displayName": "Apex",
+                "$$hashKey": "object:12932"
+              },
+              {
+                "value": "MATLAB",
+                "displayName": "MATLAB",
+                "$$hashKey": "object:12933"
+              },
+              {
+                "value": "Logos",
+                "displayName": "Logos",
+                "$$hashKey": "object:12934"
+              },
+              {
+                "value": "Vim Script",
+                "displayName": "Vim Script",
+                "$$hashKey": "object:12935"
+              },
+              {
+                "value": "Tcl",
+                "displayName": "Tcl",
+                "$$hashKey": "object:12936"
+              },
+              {
+                "value": "Mathematica",
+                "displayName": "Mathematica",
+                "$$hashKey": "object:12937"
+              },
+              {
+                "value": "MQL4",
+                "displayName": "MQL4",
+                "$$hashKey": "object:12938"
+              },
+              {
+                "value": "SaltStack",
+                "displayName": "SaltStack",
+                "$$hashKey": "object:12939"
+              },
+              {
+                "value": "MQL5",
+                "displayName": "MQL5",
+                "$$hashKey": "object:12940"
+              },
+              {
+                "value": "NSIS",
+                "displayName": "NSIS",
+                "$$hashKey": "object:12941"
+              },
+              {
+                "value": "Yacc",
+                "displayName": "Yacc",
+                "$$hashKey": "object:12942"
+              },
+              {
+                "value": "Racket",
+                "displayName": "Racket",
+                "$$hashKey": "object:12943"
+              },
+              {
+                "value": "Metal",
+                "displayName": "Metal",
+                "$$hashKey": "object:12944"
+              },
+              {
+                "value": "Gherkin",
+                "displayName": "Gherkin",
+                "$$hashKey": "object:12945"
+              },
+              {
+                "value": "PostScript",
+                "displayName": "PostScript",
+                "$$hashKey": "object:12946"
+              },
+              {
+                "value": "BitBake",
+                "displayName": "BitBake",
+                "$$hashKey": "object:12947"
+              },
+              {
+                "value": "ColdFusion",
+                "displayName": "ColdFusion",
+                "$$hashKey": "object:12948"
+              },
+              {
+                "value": "Max",
+                "displayName": "Max",
+                "$$hashKey": "object:12949"
+              },
+              {
+                "value": "FreeMarker",
+                "displayName": "FreeMarker",
+                "$$hashKey": "object:12950"
+              },
+              {
+                "value": "API Blueprint",
+                "displayName": "API Blueprint",
+                "$$hashKey": "object:12951"
+              },
+              {
+                "value": "TSQL",
+                "displayName": "TSQL",
+                "$$hashKey": "object:12952"
+              },
+              {
+                "value": "Jinja",
+                "displayName": "Jinja",
+                "$$hashKey": "object:12953"
+              },
+              {
+                "value": "OpenEdge ABL",
+                "displayName": "OpenEdge ABL",
+                "$$hashKey": "object:12954"
+              },
+              {
+                "value": "HLSL",
+                "displayName": "HLSL",
+                "$$hashKey": "object:12955"
+              },
+              {
+                "value": "SuperCollider",
+                "displayName": "SuperCollider",
+                "$$hashKey": "object:12956"
+              },
+              {
+                "value": "AGS Script",
+                "displayName": "AGS Script",
+                "$$hashKey": "object:12957"
+              },
+              {
+                "value": "Idris",
+                "displayName": "Idris",
+                "$$hashKey": "object:12958"
+              },
+              {
+                "value": "PigLatin",
+                "displayName": "PigLatin",
+                "$$hashKey": "object:12959"
+              },
+              {
+                "value": "SAS",
+                "displayName": "SAS",
+                "$$hashKey": "object:12960"
+              },
+              {
+                "value": "AutoIt",
+                "displayName": "AutoIt",
+                "$$hashKey": "object:12961"
+              },
+              {
+                "value": "LLVM",
+                "displayName": "LLVM",
+                "$$hashKey": "object:12962"
+              },
+              {
+                "value": "Stata",
+                "displayName": "Stata",
+                "$$hashKey": "object:12963"
+              },
+              {
+                "value": "M",
+                "displayName": "M",
+                "$$hashKey": "object:12964"
+              },
+              {
+                "value": "POV-Ray SDL",
+                "displayName": "POV-Ray SDL",
+                "$$hashKey": "object:12965"
+              },
+              {
+                "value": "RobotFramework",
+                "displayName": "RobotFramework",
+                "$$hashKey": "object:12966"
+              },
+              {
+                "value": "EJS",
+                "displayName": "EJS",
+                "$$hashKey": "object:12967"
+              },
+              {
+                "value": "Awk",
+                "displayName": "Awk",
+                "$$hashKey": "object:12968"
+              },
+              {
+                "value": "SRecode Template",
+                "displayName": "SRecode Template",
+                "$$hashKey": "object:12969"
+              },
+              {
+                "value": "PureBasic",
+                "displayName": "PureBasic",
+                "$$hashKey": "object:12970"
+              },
+              {
+                "value": "Game Maker Language",
+                "displayName": "Game Maker Language",
+                "$$hashKey": "object:12971"
+              },
+              {
+                "value": "AppleScript",
+                "displayName": "AppleScript",
+                "$$hashKey": "object:12972"
+              },
+              {
+                "value": "Nix",
+                "displayName": "Nix",
+                "$$hashKey": "object:12973"
+              },
+              {
+                "value": "COBOL",
+                "displayName": "COBOL",
+                "$$hashKey": "object:12974"
+              },
+              {
+                "value": "G-code",
+                "displayName": "G-code",
+                "$$hashKey": "object:12975"
+              },
+              {
+                "value": "SMT",
+                "displayName": "SMT",
+                "$$hashKey": "object:12976"
+              },
+              {
+                "value": "Haml",
+                "displayName": "Haml",
+                "$$hashKey": "object:12977"
+              },
+              {
+                "value": "Hack",
+                "displayName": "Hack",
+                "$$hashKey": "object:12978"
+              },
+              {
+                "value": "Hy",
+                "displayName": "Hy",
+                "$$hashKey": "object:12979"
+              },
+              {
+                "value": "Arc",
+                "displayName": "Arc",
+                "$$hashKey": "object:12980"
+              },
+              {
+                "value": "LabVIEW",
+                "displayName": "LabVIEW",
+                "$$hashKey": "object:12981"
+              },
+              {
+                "value": "nesC",
+                "displayName": "nesC",
+                "$$hashKey": "object:12982"
+              },
+              {
+                "value": "PAWN",
+                "displayName": "PAWN",
+                "$$hashKey": "object:12983"
+              },
+              {
+                "value": "Ren'Py",
+                "displayName": "Ren'Py",
+                "$$hashKey": "object:12984"
+              },
+              {
+                "value": "Zephir",
+                "displayName": "Zephir",
+                "$$hashKey": "object:12985"
+              },
+              {
+                "value": "Gosu",
+                "displayName": "Gosu",
+                "$$hashKey": "object:12986"
+              },
+              {
+                "value": "WebAssembly",
+                "displayName": "WebAssembly",
+                "$$hashKey": "object:12987"
+              },
+              {
+                "value": "Pure Data",
+                "displayName": "Pure Data",
+                "$$hashKey": "object:12988"
+              },
+              {
+                "value": "RAML",
+                "displayName": "RAML",
+                "$$hashKey": "object:12989"
+              },
+              {
+                "value": "Liquid",
+                "displayName": "Liquid",
+                "$$hashKey": "object:12990"
+              },
+              {
+                "value": "Web Ontology Language",
+                "displayName": "Web Ontology Language",
+                "$$hashKey": "object:12991"
+              },
+              {
+                "value": "Meson",
+                "displayName": "Meson",
+                "$$hashKey": "object:12992"
+              },
+              {
+                "value": "ABAP",
+                "displayName": "ABAP",
+                "$$hashKey": "object:12993"
+              },
+              {
+                "value": "AMPL",
+                "displayName": "AMPL",
+                "$$hashKey": "object:12994"
+              },
+              {
+                "value": "Lex",
+                "displayName": "Lex",
+                "$$hashKey": "object:12995"
+              },
+              {
+                "value": "ANTLR",
+                "displayName": "ANTLR",
+                "$$hashKey": "object:12996"
+              },
+              {
+                "value": "GAP",
+                "displayName": "GAP",
+                "$$hashKey": "object:12997"
+              },
+              {
+                "value": "Ring",
+                "displayName": "Ring",
+                "$$hashKey": "object:12998"
+              },
+              {
+                "value": "MoonScript",
+                "displayName": "MoonScript",
+                "$$hashKey": "object:12999"
+              },
+              {
+                "value": "CartoCSS",
+                "displayName": "CartoCSS",
+                "$$hashKey": "object:13000"
+              },
+              {
+                "value": "Objective-J",
+                "displayName": "Objective-J",
+                "$$hashKey": "object:13001"
+              },
+              {
+                "value": "Xtend",
+                "displayName": "Xtend",
+                "$$hashKey": "object:13002"
+              },
+              {
+                "value": "Standard ML",
+                "displayName": "Standard ML",
+                "$$hashKey": "object:13003"
+              },
+              {
+                "value": "Terra",
+                "displayName": "Terra",
+                "$$hashKey": "object:13004"
+              },
+              {
+                "value": "Visual Basic .NET",
+                "displayName": "Visual Basic .NET",
+                "$$hashKey": "object:13005"
+              },
+              {
+                "value": "SystemVerilog",
+                "displayName": "SystemVerilog",
+                "$$hashKey": "object:13006"
+              },
+              {
+                "value": "GAMS",
+                "displayName": "GAMS",
+                "$$hashKey": "object:13007"
+              },
+              {
+                "value": "Stylus",
+                "displayName": "Stylus",
+                "$$hashKey": "object:13008"
+              },
+              {
+                "value": "Pug",
+                "displayName": "Pug",
+                "$$hashKey": "object:13009"
+              },
+              {
+                "value": "APL",
+                "displayName": "APL",
+                "$$hashKey": "object:13010"
+              },
+              {
+                "value": "ooc",
+                "displayName": "ooc",
+                "$$hashKey": "object:13011"
+              },
+              {
+                "value": "Bro",
+                "displayName": "Bro",
+                "$$hashKey": "object:13012"
+              },
+              {
+                "value": "LilyPond",
+                "displayName": "LilyPond",
+                "$$hashKey": "object:13013"
+              },
+              {
+                "value": "SWIG",
+                "displayName": "SWIG",
+                "$$hashKey": "object:13014"
+              },
+              {
+                "value": "Rebol",
+                "displayName": "Rebol",
+                "$$hashKey": "object:13015"
+              },
+              {
+                "value": "Agda",
+                "displayName": "Agda",
+                "$$hashKey": "object:13016"
+              },
+              {
+                "value": "Nextflow",
+                "displayName": "Nextflow",
+                "$$hashKey": "object:13017"
+              },
+              {
+                "value": "Gnuplot",
+                "displayName": "Gnuplot",
+                "$$hashKey": "object:13018"
+              },
+              {
+                "value": "XQuery",
+                "displayName": "XQuery",
+                "$$hashKey": "object:13019"
+              },
+              {
+                "value": "M4",
+                "displayName": "M4",
+                "$$hashKey": "object:13020"
+              },
+              {
+                "value": "Propeller Spin",
+                "displayName": "Propeller Spin",
+                "$$hashKey": "object:13021"
+              },
+              {
+                "value": "NetLogo",
+                "displayName": "NetLogo",
+                "$$hashKey": "object:13022"
+              },
+              {
+                "value": "Volt",
+                "displayName": "Volt",
+                "$$hashKey": "object:13023"
+              },
+              {
+                "value": "VBA",
+                "displayName": "VBA",
+                "$$hashKey": "object:13024"
+              },
+              {
+                "value": "LSL",
+                "displayName": "LSL",
+                "$$hashKey": "object:13025"
+              },
+              {
+                "value": "Modelica",
+                "displayName": "Modelica",
+                "$$hashKey": "object:13026"
+              },
+              {
+                "value": "Ada",
+                "displayName": "Ada",
+                "$$hashKey": "object:13027"
+              },
+              {
+                "value": "Raku",
+                "displayName": "Raku",
+                "$$hashKey": "object:13028"
+              },
+              {
+                "value": "1C Enterprise",
+                "displayName": "1C Enterprise",
+                "$$hashKey": "object:13029"
+              },
+              {
+                "value": "Nemerle",
+                "displayName": "Nemerle",
+                "$$hashKey": "object:13030"
+              },
+              {
+                "value": "Forth",
+                "displayName": "Forth",
+                "$$hashKey": "object:13031"
+              },
+              {
+                "value": "Monkey C",
+                "displayName": "Monkey C",
+                "$$hashKey": "object:13032"
+              },
+              {
+                "value": "Alloy",
+                "displayName": "Alloy",
+                "$$hashKey": "object:13033"
+              },
+              {
+                "value": "PogoScript",
+                "displayName": "PogoScript",
+                "$$hashKey": "object:13034"
+              },
+              {
+                "value": "Redcode",
+                "displayName": "Redcode",
+                "$$hashKey": "object:13035"
+              },
+              {
+                "value": "Papyrus",
+                "displayName": "Papyrus",
+                "$$hashKey": "object:13036"
+              },
+              {
+                "value": "Thrift",
+                "displayName": "Thrift",
+                "$$hashKey": "object:13037"
+              },
+              {
+                "value": "Twig",
+                "displayName": "Twig",
+                "$$hashKey": "object:13038"
+              },
+              {
+                "value": "Ceylon",
+                "displayName": "Ceylon",
+                "$$hashKey": "object:13039"
+              },
+              {
+                "value": "Isabelle",
+                "displayName": "Isabelle",
+                "$$hashKey": "object:13040"
+              },
+              {
+                "value": "Red",
+                "displayName": "Red",
+                "$$hashKey": "object:13041"
+              },
+              {
+                "value": "Slash",
+                "displayName": "Slash",
+                "$$hashKey": "object:13042"
+              },
+              {
+                "value": "Sass",
+                "displayName": "Sass",
+                "$$hashKey": "object:13043"
+              },
+              {
+                "value": "LiveScript",
+                "displayName": "LiveScript",
+                "$$hashKey": "object:13044"
+              },
+              {
+                "value": "Clarion",
+                "displayName": "Clarion",
+                "$$hashKey": "object:13045"
+              },
+              {
+                "value": "DTrace",
+                "displayName": "DTrace",
+                "$$hashKey": "object:13046"
+              },
+              {
+                "value": "QMake",
+                "displayName": "QMake",
+                "$$hashKey": "object:13047"
+              },
+              {
+                "value": "Eiffel",
+                "displayName": "Eiffel",
+                "$$hashKey": "object:13048"
+              },
+              {
+                "value": "RPC",
+                "displayName": "RPC",
+                "$$hashKey": "object:13049"
+              },
+              {
+                "value": "Lean",
+                "displayName": "Lean",
+                "$$hashKey": "object:13050"
+              },
+              {
+                "value": "Coq",
+                "displayName": "Coq",
+                "$$hashKey": "object:13051"
+              },
+              {
+                "value": "LookML",
+                "displayName": "LookML",
+                "$$hashKey": "object:13052"
+              },
+              {
+                "value": "MAXScript",
+                "displayName": "MAXScript",
+                "$$hashKey": "object:13053"
+              },
+              {
+                "value": "Io",
+                "displayName": "Io",
+                "$$hashKey": "object:13054"
+              }
+            ],
+            "name": "Choose Language",
+            "displayName": "Choose Language",
+            "defaultValue": "JavaScript",
+            "hidden": false,
+            "$$hashKey": "object:12834"
+          }
+        }
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<h2> Top 15 largest JavaScript repositories </h2>\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "ReposName\tsize\nSpagoBI\t1777636\nwottactics\t1546798\nselenium\t1406941\nHail_Of_Lights\t1169621\nionic-site\t1156907\nluthAR\t1062022\nFront-end-Notes\t936088\nTrainingContent\t868440\nccxt\t760779\nhabitica\t738517\nblockly-games\t726503\ncurricula-js\t721402\ndevopsdays-assets\t630225\ndakara-client\t600158\nlayaair\t574545\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mselectedLanguage\u001b[0m: \u001b[1m\u001b[32mAny\u001b[0m = JavaScript\n\u001b[1m\u001b[34mlargestTopRepositories\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [ReposName: string, size: string]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201046_271115538",
+      "id": "paragraph_1668813939731_46476096",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12643"
+    },
+    {
+      "text": "print(\"%html <h2> Licenses </h2>\")\nval licensedReposNumber = spark.sql(\n    \"(select \\\"Licensed\\\", sum(repositories) as Number_repostories from (select count(_c13) as repositories from csv.`/user/hduser/data.csv` where _c13 != \\\"NULL\\\" group by _c13))\" \n    +\n    \"union\"\n    +\n    \"(select \\\"NonLicensed\\\", sum(repositories) as Number_repostories from (select count(_c13) as repositories from csv.`/user/hduser/data.csv` where _c13 == \\\"NULL\\\" group by _c13))\"\n\n)\nz.show(licensedReposNumber)\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 3,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 618,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "Licensed0",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {
+                          "priority": 0,
+                          "direction": "asc"
+                        },
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "Number_repostories1",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1,
+                      "paginationPageSize": 250
+                    }
+                  },
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Licensed": "string",
+                      "Number_repostories": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "Licensed",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "Number_repostories",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "2": {
+            "graph": {
+              "mode": "table",
+              "height": 130.25,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Number_repostories": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<h2> Licenses </h2>\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "Licensed\tNumber_repostories\nNonLicensed\t65314\nLicensed\t32290\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlicensedReposNumber\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [Licensed: string, Number_repostories: bigint]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201046_1673446452",
+      "id": "paragraph_1668960291532_1132312118",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12644"
+    },
+    {
+      "text": "print(\"%html <h2> Licenses </h2>\")\nval licensedReposNumber = spark.sql(\n    \"select _c13 as license, count(_c13) as repositories from csv.`/user/hduser/data.csv` where _c13 != \\\"NULL\\\" group by _c13 order by CAST(repositories AS long) desc\"\n)\nz.show(licensedReposNumber)",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "progress": 0,
+      "config": {
+        "lineNumbers": false,
+        "tableHide": false,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 9,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "editorHide": false,
+        "title": false,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "license": "string",
+                      "reposName": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "license",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "reposName",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "1": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 626,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "license": "string",
+                      "repositories": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "pieChart": {}
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "license",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "repositories",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "2": {
+            "graph": {
+              "mode": "table",
+              "height": 90.25,
+              "optionOpen": false
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<h2> Licenses </h2>\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "license\trepositories\nMIT License\t13310\nOther\t6700\nApache License 2.0\t5330\nGNU General Public License v3.0\t2662\nGNU General Public License v2.0\t1114\n\"BSD 3-Clause \"\"New\"\" or \"\"Revised\"\" License\"\t919\nGNU Affero General Public License v3.0\t347\n\"BSD 2-Clause \"\"Simplified\"\" License\"\t302\nCreative Commons Zero v1.0 Universal\t295\nGNU Lesser General Public License v3.0\t277\nThe Unlicense\t248\nMozilla Public License 2.0\t151\nGNU Lesser General Public License v2.1\t141\nCreative Commons Attribution 4.0 International\t100\nISC License\t93\nEclipse Public License 1.0\t67\nDo What The F*ck You Want To Public License\t59\nCreative Commons Attribution Share Alike 4.0 International\t56\nBoost Software License 1.0\t23\nOpen Software License 3.0\t20\nArtistic License 2.0\t19\nMicrosoft Public License\t16\nzlib License\t15\nEducational Community License v2.0\t10\nMIT No Attribution\t5\nLaTeX Project Public License v1.3c\t2\n\"BSD 4-Clause \"\"Original\"\" or \"\"Old\"\" License\"\t2\nBSD Zero Clause License\t1\nSIL Open Font License 1.1\t1\nOpen Data Commons Open Database License v1.0\t1\nBSD 3-Clause Clear License\t1\nAcademic Free License v3.0\t1\nEclipse Public License 2.0\t1\nEuropean Union Public License 1.1\t1\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mlicensedReposNumber\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [license: string, repositories: bigint]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201046_894736470",
+      "id": "paragraph_1668955713694_2007649610",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12645"
+    },
+    {
+      "user": "anonymous",
+      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670066201046_1539183660",
+      "id": "paragraph_1668960075728_1005848045",
+      "dateCreated": "2022-12-03T11:16:41+0000",
+      "status": "READY",
+      "$$hashKey": "object:12646"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670069621821_863011197",
+      "id": "paragraph_1670069621821_863011197",
+      "dateCreated": "2022-12-03T12:13:41+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:18055",
+      "text": "print(\"%html <h2> Top 10 repositories by number of commits </h2>\")\nval languages = spark.sql(\n    \"select distinct(_c0) as repositories, count(_c11) as totalCommits from csv.`/user/hduser/data.csv` where _c11 != \\\"NULL\\\" group by repositories order by CAST(totalCommits AS long) desc limit 10\"\n)\nz show repositories",
+      "dateUpdated": "2022-12-03T12:13:46+0000"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670069632935_1947795059",
+      "id": "paragraph_1670069632935_1947795059",
+      "dateCreated": "2022-12-03T12:13:52+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:18137",
+      "text": "print(\"%html <h2> Top 10 repositories by number of open_issues </h2>\")\nval languages = spark.sql(\n    \"select distinct(_c0) as repositories, count(_c10) as totalOpenIssues from csv.`/user/hduser/data.csv` where _c10 != \\\"NULL\\\" group by repositories order by CAST(totalOpenIssues AS long) desc limit 10\"\n)\nz show repositories",
+      "dateUpdated": "2022-12-03T12:13:56+0000"
+    }
+  ],
+  "name": "123",
+  "id": "2HJYA3Y34",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/123"
+}
