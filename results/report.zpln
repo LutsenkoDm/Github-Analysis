@@ -1,90 +1,9 @@
 ﻿{
   "paragraphs": [
     {
-      "text": "%sh\ncd /home/hduser\nls",
-      "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:16:41+0000",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "sh",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "colWidth": 12,
-        "editorMode": "ace/mode/sh",
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "derby.log\nhadoop\nhive\nmetastore_db\nspark\nspark-warehouse\nzeppelin\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201043_916511393",
-      "id": "paragraph_1666558240640_1669180656",
-      "dateCreated": "2022-12-03T11:16:41+0000",
-      "status": "READY",
-      "focus": true,
-      "$$hashKey": "object:12627"
-    },
-    {
-      "text": "%sh\nhdfs dfs -ls /user/hduser",
-      "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:16:41+0000",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "sh",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "colWidth": 12,
-        "editorMode": "ace/mode/sh",
-        "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "Found 2 items\ndrwxr-xr-x   - hduser supergroup          0 2022-11-20 13:14 /user/hduser/.sparkStaging\n-rwxr-xr-x   1 dr.who supergroup   10715489 2022-11-16 12:54 /user/hduser/data.csv\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201043_215076735",
-      "id": "paragraph_1666559257322_1380838368",
-      "dateCreated": "2022-12-03T11:16:41+0000",
-      "status": "READY",
-      "$$hashKey": "object:12628"
-    },
-    {
       "text": "%spark.sql\nSELECT * FROM csv.`/user/hduser/data.csv` LIMIT 10",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "dateUpdated": "2022-12-05T08:46:29+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -96,6 +15,7 @@
         "colWidth": 12,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
+        "editorHide": true,
         "results": {
           "0": {
             "graph": {
@@ -157,16 +77,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201043_1891092793",
+      "jobName": "paragraph_1670229564975_1449630482",
       "id": "paragraph_1666561712149_134416920",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12629"
+      "$$hashKey": "object:8928",
+      "focus": true
     },
     {
       "text": "%spark.sql\nselect _c1 as name from csv.`/user/hduser/data.csv` limit 10\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "dateUpdated": "2022-12-05T08:46:29+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -178,6 +99,7 @@
         "colWidth": 12,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
+        "editorHide": true,
         "results": {
           "0": {
             "graph": {
@@ -225,16 +147,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201043_1455397251",
+      "jobName": "paragraph_1670229564975_753774800",
       "id": "paragraph_1668603467630_16389004",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12630"
+      "$$hashKey": "object:8929"
     },
     {
       "text": "%spark.sql\nselect * from csv.`/user/hduser/data.csv` where _c6 = \"Go\" and _c3 > 1000 and _c4 > 1000 limit 10",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T12:22:02+0000",
+      "dateUpdated": "2022-12-05T08:46:27+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -246,6 +168,7 @@
         "colWidth": 12,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
+        "editorHide": true,
         "results": {
           "0": {
             "graph": {
@@ -335,16 +258,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201043_1805053288",
+      "jobName": "paragraph_1670229564975_1862870631",
       "id": "paragraph_1668809768517_1579368362",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12631"
+      "$$hashKey": "object:8930"
     },
     {
       "text": "%spark.sql\nselect first(_c0) as name, first(_c6 IGNORE NULLS) as language, first(_c1) as owner, first(_c4) as watchers from csv.`/user/hduser/data.csv` where _c4 > (select avg(_c4) from csv.`/user/hduser/data.csv`) group by _c6 order by watchers ",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T12:21:53+0000",
+      "dateUpdated": "2022-12-05T08:46:26+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -356,6 +279,7 @@
         "colWidth": 12,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
+        "editorHide": true,
         "results": {
           "0": {
             "graph": {
@@ -481,16 +405,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201043_1634707922",
+      "jobName": "paragraph_1670229564975_1760606361",
       "id": "paragraph_1668810247688_1846146271",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12632"
+      "$$hashKey": "object:8931"
     },
     {
       "text": "%spark.sql\nselect max(_c7), first(_c0) from csv.`/user/hduser/data.csv` as test  where exists (select 1 from csv.`/user/hduser/data.csv`as rt where test._c1 = rt._c1)",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "dateUpdated": "2022-12-05T08:46:22+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -502,6 +426,7 @@
         "colWidth": 12,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
+        "editorHide": true,
         "results": {
           "0": {
             "graph": {
@@ -550,16 +475,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201043_336569462",
+      "jobName": "paragraph_1670229564975_2103123475",
       "id": "paragraph_1668811569734_1617184419",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12633"
+      "$$hashKey": "object:8932"
     },
     {
       "text": "%spark.sql\nselect max(_c11) as maxTotalCommitsAll, min(_c11) as minTotalCommitsAll, _c6 as language from csv.`/user/hduser/data.csv` where _c3 > (select avg(_c3) from csv.`/user/hduser/data.csv`) group by(_c6) order by first(_c3)",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T12:21:37+0000",
+      "dateUpdated": "2022-12-05T08:46:19+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -568,14 +493,15 @@
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "colWidth": 12,
+        "colWidth": 6,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
+        "editorHide": true,
         "results": {
           "0": {
             "graph": {
               "mode": "pieChart",
-              "height": 300,
+              "height": 910,
               "optionOpen": false,
               "setting": {
                 "table": {
@@ -654,16 +580,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201043_496514894",
+      "jobName": "paragraph_1670229564975_1166780760",
       "id": "paragraph_1668812335702_354092397",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12634"
+      "$$hashKey": "object:8933"
     },
     {
       "text": "%spark.sql\nselect _c6 as language, max(_c3) as stargazers from csv.`/user/hduser/data.csv` where _c9 > 1000 group by language order by stargazers limit 10 \n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T12:21:33+0000",
+      "dateUpdated": "2022-12-05T08:46:20+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -672,14 +598,15 @@
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "colWidth": 12,
+        "colWidth": 6,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
+        "editorHide": true,
         "results": {
           "0": {
             "graph": {
               "mode": "pieChart",
-              "height": 300,
+              "height": 846.625,
               "optionOpen": true,
               "setting": {
                 "table": {
@@ -759,16 +686,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201044_1188232551",
+      "jobName": "paragraph_1670229564975_1717743672",
       "id": "paragraph_1668812269239_1655278715",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12635"
+      "$$hashKey": "object:8934"
     },
     {
       "text": "%spark.sql\nselect max(_c10) as open_issues,  _c6 as language from csv.`/user/hduser/data.csv` group by _c6 limit 10 ",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T12:21:29+0000",
+      "dateUpdated": "2022-12-05T08:45:16+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -780,6 +707,7 @@
         "colWidth": 12,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
+        "editorHide": true,
         "results": {
           "0": {
             "graph": {
@@ -889,16 +817,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201044_915268901",
+      "jobName": "paragraph_1670229564976_1287834462",
       "id": "paragraph_1668813255632_879927219",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12636"
+      "$$hashKey": "object:8935"
     },
     {
       "text": "%spark.sql\nselect first(_c0), first(_c6), max(_c2) as m from csv.`/user/hduser/data.csv` order by m",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T12:21:19+0000",
+      "dateUpdated": "2022-12-05T08:39:24+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -981,16 +909,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201045_2032533314",
+      "jobName": "paragraph_1670229564976_1879621957",
       "id": "paragraph_1668813404705_276827948",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12637"
+      "$$hashKey": "object:8936"
     },
     {
       "text": "%spark.sql\nselect * from csv.`/user/hduser/data.csv` where _c3 > 1000 and (_c7 = \"true\" or _c8 = \"true\") limit",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T12:21:14+0000",
+      "dateUpdated": "2022-12-05T08:44:54+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1005,7 +933,7 @@
         "results": {
           "0": {
             "graph": {
-              "mode": "scatterChart",
+              "mode": "stackedAreaChart",
               "height": 300,
               "optionOpen": false,
               "setting": {
@@ -1044,9 +972,16 @@
                   "rotate": {
                     "degree": "-45"
                   },
-                  "xLabelStatus": "default"
+                  "xLabelStatus": "default",
+                  "style": "stream"
                 },
                 "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "multiBarChart": {
                   "rotate": {
                     "degree": "-45"
                   },
@@ -1091,16 +1026,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201045_1995319235",
+      "jobName": "paragraph_1670229564976_227257722",
       "id": "paragraph_1668813592405_286843425",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12638"
+      "$$hashKey": "object:8937"
     },
     {
       "text": "%spark.sql\nselect _c3 as Stargazers , _c0 as ReposName from csv.`/user/hduser/data.csv` order by _c3 desc limit 10\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T12:21:07+0000",
+      "dateUpdated": "2022-12-05T08:41:28+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1109,14 +1044,14 @@
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "colWidth": 12,
+        "colWidth": 5,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
         "results": {
           "0": {
             "graph": {
               "mode": "pieChart",
-              "height": 300,
+              "height": 298,
               "optionOpen": false,
               "setting": {
                 "table": {
@@ -1259,16 +1194,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201045_225007666",
+      "jobName": "paragraph_1670229564976_2107681126",
       "id": "paragraph_1668813740931_329203550",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12639"
+      "$$hashKey": "object:8938"
     },
     {
       "text": "%spark.sql\nselect * from csv.`/user/hduser/data.csv`  where _c11 = _c12 limit 10",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T12:21:02+0000",
+      "dateUpdated": "2022-12-05T08:45:23+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1280,6 +1215,7 @@
         "colWidth": 12,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
+        "editorHide": true,
         "results": {
           "0": {
             "graph": {
@@ -1369,16 +1305,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201045_97740907",
+      "jobName": "paragraph_1670229564976_1033535025",
       "id": "paragraph_1668813871386_1168014965",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12640"
+      "$$hashKey": "object:8939"
     },
     {
       "text": "print(\"%html <h2> Top 10 popular languages </h2>\")\nz show languages.limit(10)",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "dateUpdated": "2022-12-05T08:39:24+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1444,16 +1380,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201046_2126969007",
+      "jobName": "paragraph_1670229564976_1324607217",
       "id": "paragraph_1668959647012_433295318",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12641"
+      "$$hashKey": "object:8940"
     },
     {
       "text": "print(\"%html <h2> Popular languages </h2>\")\nval languages = spark.sql(\n    \"select distinct(_c6) as language, count(_c6) as reposNumber from csv.`/user/hduser/data.csv` where _c6 != \\\"NULL\\\" group by language order by CAST(reposNumber AS long) desc\"\n)\nz show languages\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:26:52+0000",
+      "dateUpdated": "2022-12-05T08:45:28+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1629,29 +1565,55 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
+        "code": "SUCCESS",
         "msg": [
           {
+            "type": "HTML",
+            "data": "<h2> Popular languages </h2>\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "language\treposNumber\nJavaScript\t15547\nJava\t11121\nPython\t8458\nHTML\t7163\nPHP\t4718\nC++\t3549\nRuby\t2935\nCSS\t2863\nC#\t2618\nC\t2601\nShell\t1844\nTypeScript\t1524\nJupyter Notebook\t1477\nGo\t1468\nSwift\t1375\nObjective-C\t1273\nR\t570\nVue\t415\nScala\t373\nKotlin\t323\nLua\t299\nMatlab\t270\nRust\t228\nTeX\t218\nArduino\t216\nPowerShell\t215\nVim script\t206\nMakefile\t196\nGroovy\t185\nElixir\t140\nHaskell\t135\nPerl\t124\nCoffeeScript\t120\nEmacs Lisp\t83\nClojure\t79\nAssembly\t74\nCMake\t58\nBatchfile\t58\nVisual Basic\t55\nJulia\t54\nPascal\t53\nErlang\t52\nEagle\t48\nXSLT\t39\nProcessing\t37\nHCL\t36\nElm\t35\nOCaml\t35\nF#\t34\nDockerfile\t34\nRoff\t32\nSCSS\t32\nApacheConf\t32\nASP\t31\nProtocol Buffer\t30\nCommon Lisp\t28\nHaxe\t26\nVerilog\t25\nDart\t24\nFortran\t24\nPLpgSQL\t23\nCuda\t22\nNginx\t22\nVHDL\t21\nSQF\t20\nSmarty\t20\nScheme\t20\nObjective-C++\t20\nPureScript\t19\nQML\t19\nD\t19\nRascal\t18\nActionScript\t18\nSmali\t17\nCrystal\t17\nPLSQL\t17\nDIGITAL Command Language\t16\nShaderLab\t16\nPuppet\t16\nSQLPL\t14\nSmalltalk\t14\nGDScript\t13\nProlog\t12\nVala\t12\nIDL\t12\nAutoHotkey\t11\nOpenSCAD\t10\nGLSL\t10\nPerl 6\t10\nApex\t10\nSourcePawn\t10\nDM\t10\nNim\t10\nMATLAB\t10\nLogos\t10\nVim Script\t9\nTcl\t9\nMathematica\t9\nRacket\t8\nSaltStack\t8\nMQL5\t8\nYacc\t8\nNSIS\t8\nMQL4\t8\nMetal\t7\nGherkin\t7\nPostScript\t7\nMax\t6\nColdFusion\t6\nFreeMarker\t6\nBitBake\t6\nJinja\t5\nAPI Blueprint\t5\nTSQL\t5\nHLSL\t4\nSAS\t4\nAutoIt\t4\nAGS Script\t4\nPigLatin\t4\nStata\t4\nSuperCollider\t4\nOpenEdge ABL\t4\nLLVM\t4\nIdris\t4\nM\t4\nRobotFramework\t3\nAwk\t3\nCOBOL\t3\nPOV-Ray SDL\t3\nSRecode Template\t3\nAppleScript\t3\nSMT\t3\nPureBasic\t3\nNix\t3\nEJS\t3\nGame Maker Language\t3\nG-code\t3\nANTLR\t2\nPAWN\t2\nABAP\t2\nWebAssembly\t2\nPure Data\t2\nGAP\t2\nHack\t2\nObjective-J\t2\nnesC\t2\nHaml\t2\nStandard ML\t2\nWeb Ontology Language\t2\nMeson\t2\nRen'Py\t2\nZephir\t2\nGosu\t2\nAMPL\t2\nRing\t2\nMoonScript\t2\nCartoCSS\t2\nRAML\t2\nArc\t2\nLiquid\t2\nLabVIEW\t2\nXtend\t2\nTerra\t2\nVisual Basic .NET\t2\nSystemVerilog\t2\nLex\t2\nHy\t2\nGAMS\t1\nStylus\t1\nSWIG\t1\nAPL\t1\nPug\t1\nLSL\t1\nRebol\t1\nGnuplot\t1\nooc\t1\nLilyPond\t1\nVolt\t1\nAlloy\t1\nIo\t1\nAgda\t1\nNextflow\t1\nAda\t1\nXQuery\t1\nBro\t1\nNetLogo\t1\nEiffel\t1\nVBA\t1\nCoq\t1\nPogoScript\t1\nModelica\t1\nPapyrus\t1\nTwig\t1\nRaku\t1\n1C Enterprise\t1\nM4\t1\nSlash\t1\nPropeller Spin\t1\nForth\t1\nMonkey C\t1\nRPC\t1\nLookML\t1\nMAXScript\t1\nRedcode\t1\nThrift\t1\nCeylon\t1\nIsabelle\t1\nNemerle\t1\nSass\t1\nLiveScript\t1\nClarion\t1\nDTrace\t1\nQMake\t1\nLean\t1\nRed\t1\n"
+          },
+          {
             "type": "TEXT",
-            "data": "java.lang.RuntimeException\n\tat org.apache.zeppelin.interpreter.remote.PooledRemoteClient.callRemoteFunction(PooledRemoteClient.java:114)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.callRemoteFunction(RemoteInterpreterProcess.java:99)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.interpret(RemoteInterpreter.java:208)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:486)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:71)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:182)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:750)\n"
+            "data": "\u001b[1m\u001b[34mlanguages\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [language: string, reposNumber: bigint]\n"
           }
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://localhost:40007/jobs",
+              "$$hashKey": "object:17282"
+            },
+            {
+              "jobUrl": "http://localhost:40007/jobs",
+              "$$hashKey": "object:17283"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201046_847983678",
+      "jobName": "paragraph_1670229564976_2142787026",
       "id": "paragraph_1668959232361_1264458547",
-      "dateCreated": "2022-12-03T11:16:41+0000",
-      "dateStarted": "2022-12-03T11:26:52+0000",
-      "dateFinished": "2022-12-03T11:26:52+0000",
-      "status": "ERROR",
-      "$$hashKey": "object:12642"
+      "dateCreated": "2022-12-05T08:39:24+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:8941",
+      "dateFinished": "2022-12-05T08:46:26+0000",
+      "dateStarted": "2022-12-05T08:45:28+0000"
     },
     {
       "text": "\nval selectedLanguage = z.select(\"Choose Language\", languages.map(l => (l.getString(0), l.getString(0))).collect())\nprint(\"%html <h2> Top 15 largest \" + selectedLanguage + \" repositories </h2>\")\n\nval largestTopRepositories = spark.sql(\n    \"select _c0 as ReposName, first(_c2) as size from csv.`/user/hduser/data.csv`  where _c6 = \" + '\\\"' + selectedLanguage +  '\\\"' + \" group by _c0 order by CAST(size AS long) desc limit 15\"\n)\n\nz.show(largestTopRepositories)\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "dateUpdated": "2022-12-05T08:39:24+0000",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1801,1084 +1763,1084 @@
               {
                 "value": "JavaScript",
                 "displayName": "JavaScript",
-                "$$hashKey": "object:12840"
+                "$$hashKey": "object:9381"
               },
               {
                 "value": "Java",
                 "displayName": "Java",
-                "$$hashKey": "object:12841"
+                "$$hashKey": "object:9382"
               },
               {
                 "value": "Python",
                 "displayName": "Python",
-                "$$hashKey": "object:12842"
+                "$$hashKey": "object:9383"
               },
               {
                 "value": "HTML",
                 "displayName": "HTML",
-                "$$hashKey": "object:12843"
+                "$$hashKey": "object:9384"
               },
               {
                 "value": "PHP",
                 "displayName": "PHP",
-                "$$hashKey": "object:12844"
+                "$$hashKey": "object:9385"
               },
               {
                 "value": "C++",
                 "displayName": "C++",
-                "$$hashKey": "object:12845"
+                "$$hashKey": "object:9386"
               },
               {
                 "value": "Ruby",
                 "displayName": "Ruby",
-                "$$hashKey": "object:12846"
+                "$$hashKey": "object:9387"
               },
               {
                 "value": "CSS",
                 "displayName": "CSS",
-                "$$hashKey": "object:12847"
+                "$$hashKey": "object:9388"
               },
               {
                 "value": "C#",
                 "displayName": "C#",
-                "$$hashKey": "object:12848"
+                "$$hashKey": "object:9389"
               },
               {
                 "value": "C",
                 "displayName": "C",
-                "$$hashKey": "object:12849"
+                "$$hashKey": "object:9390"
               },
               {
                 "value": "Shell",
                 "displayName": "Shell",
-                "$$hashKey": "object:12850"
+                "$$hashKey": "object:9391"
               },
               {
                 "value": "TypeScript",
                 "displayName": "TypeScript",
-                "$$hashKey": "object:12851"
+                "$$hashKey": "object:9392"
               },
               {
                 "value": "Jupyter Notebook",
                 "displayName": "Jupyter Notebook",
-                "$$hashKey": "object:12852"
+                "$$hashKey": "object:9393"
               },
               {
                 "value": "Go",
                 "displayName": "Go",
-                "$$hashKey": "object:12853"
+                "$$hashKey": "object:9394"
               },
               {
                 "value": "Swift",
                 "displayName": "Swift",
-                "$$hashKey": "object:12854"
+                "$$hashKey": "object:9395"
               },
               {
                 "value": "Objective-C",
                 "displayName": "Objective-C",
-                "$$hashKey": "object:12855"
+                "$$hashKey": "object:9396"
               },
               {
                 "value": "R",
                 "displayName": "R",
-                "$$hashKey": "object:12856"
+                "$$hashKey": "object:9397"
               },
               {
                 "value": "Vue",
                 "displayName": "Vue",
-                "$$hashKey": "object:12857"
+                "$$hashKey": "object:9398"
               },
               {
                 "value": "Scala",
                 "displayName": "Scala",
-                "$$hashKey": "object:12858"
+                "$$hashKey": "object:9399"
               },
               {
                 "value": "Kotlin",
                 "displayName": "Kotlin",
-                "$$hashKey": "object:12859"
+                "$$hashKey": "object:9400"
               },
               {
                 "value": "Lua",
                 "displayName": "Lua",
-                "$$hashKey": "object:12860"
+                "$$hashKey": "object:9401"
               },
               {
                 "value": "Matlab",
                 "displayName": "Matlab",
-                "$$hashKey": "object:12861"
+                "$$hashKey": "object:9402"
               },
               {
                 "value": "Rust",
                 "displayName": "Rust",
-                "$$hashKey": "object:12862"
+                "$$hashKey": "object:9403"
               },
               {
                 "value": "TeX",
                 "displayName": "TeX",
-                "$$hashKey": "object:12863"
+                "$$hashKey": "object:9404"
               },
               {
                 "value": "Arduino",
                 "displayName": "Arduino",
-                "$$hashKey": "object:12864"
+                "$$hashKey": "object:9405"
               },
               {
                 "value": "PowerShell",
                 "displayName": "PowerShell",
-                "$$hashKey": "object:12865"
+                "$$hashKey": "object:9406"
               },
               {
                 "value": "Vim script",
                 "displayName": "Vim script",
-                "$$hashKey": "object:12866"
+                "$$hashKey": "object:9407"
               },
               {
                 "value": "Makefile",
                 "displayName": "Makefile",
-                "$$hashKey": "object:12867"
+                "$$hashKey": "object:9408"
               },
               {
                 "value": "Groovy",
                 "displayName": "Groovy",
-                "$$hashKey": "object:12868"
+                "$$hashKey": "object:9409"
               },
               {
                 "value": "Elixir",
                 "displayName": "Elixir",
-                "$$hashKey": "object:12869"
+                "$$hashKey": "object:9410"
               },
               {
                 "value": "Haskell",
                 "displayName": "Haskell",
-                "$$hashKey": "object:12870"
+                "$$hashKey": "object:9411"
               },
               {
                 "value": "Perl",
                 "displayName": "Perl",
-                "$$hashKey": "object:12871"
+                "$$hashKey": "object:9412"
               },
               {
                 "value": "CoffeeScript",
                 "displayName": "CoffeeScript",
-                "$$hashKey": "object:12872"
+                "$$hashKey": "object:9413"
               },
               {
                 "value": "Emacs Lisp",
                 "displayName": "Emacs Lisp",
-                "$$hashKey": "object:12873"
+                "$$hashKey": "object:9414"
               },
               {
                 "value": "Clojure",
                 "displayName": "Clojure",
-                "$$hashKey": "object:12874"
+                "$$hashKey": "object:9415"
               },
               {
                 "value": "Assembly",
                 "displayName": "Assembly",
-                "$$hashKey": "object:12875"
+                "$$hashKey": "object:9416"
               },
               {
                 "value": "CMake",
                 "displayName": "CMake",
-                "$$hashKey": "object:12876"
+                "$$hashKey": "object:9417"
               },
               {
                 "value": "Batchfile",
                 "displayName": "Batchfile",
-                "$$hashKey": "object:12877"
+                "$$hashKey": "object:9418"
               },
               {
                 "value": "Visual Basic",
                 "displayName": "Visual Basic",
-                "$$hashKey": "object:12878"
+                "$$hashKey": "object:9419"
               },
               {
                 "value": "Julia",
                 "displayName": "Julia",
-                "$$hashKey": "object:12879"
+                "$$hashKey": "object:9420"
               },
               {
                 "value": "Pascal",
                 "displayName": "Pascal",
-                "$$hashKey": "object:12880"
+                "$$hashKey": "object:9421"
               },
               {
                 "value": "Erlang",
                 "displayName": "Erlang",
-                "$$hashKey": "object:12881"
+                "$$hashKey": "object:9422"
               },
               {
                 "value": "Eagle",
                 "displayName": "Eagle",
-                "$$hashKey": "object:12882"
+                "$$hashKey": "object:9423"
               },
               {
                 "value": "XSLT",
                 "displayName": "XSLT",
-                "$$hashKey": "object:12883"
+                "$$hashKey": "object:9424"
               },
               {
                 "value": "Processing",
                 "displayName": "Processing",
-                "$$hashKey": "object:12884"
+                "$$hashKey": "object:9425"
               },
               {
                 "value": "HCL",
                 "displayName": "HCL",
-                "$$hashKey": "object:12885"
+                "$$hashKey": "object:9426"
               },
               {
                 "value": "Elm",
                 "displayName": "Elm",
-                "$$hashKey": "object:12886"
+                "$$hashKey": "object:9427"
               },
               {
                 "value": "OCaml",
                 "displayName": "OCaml",
-                "$$hashKey": "object:12887"
+                "$$hashKey": "object:9428"
               },
               {
                 "value": "Dockerfile",
                 "displayName": "Dockerfile",
-                "$$hashKey": "object:12888"
+                "$$hashKey": "object:9429"
               },
               {
                 "value": "F#",
                 "displayName": "F#",
-                "$$hashKey": "object:12889"
+                "$$hashKey": "object:9430"
               },
               {
                 "value": "ApacheConf",
                 "displayName": "ApacheConf",
-                "$$hashKey": "object:12890"
+                "$$hashKey": "object:9431"
               },
               {
                 "value": "Roff",
                 "displayName": "Roff",
-                "$$hashKey": "object:12891"
+                "$$hashKey": "object:9432"
               },
               {
                 "value": "SCSS",
                 "displayName": "SCSS",
-                "$$hashKey": "object:12892"
+                "$$hashKey": "object:9433"
               },
               {
                 "value": "ASP",
                 "displayName": "ASP",
-                "$$hashKey": "object:12893"
+                "$$hashKey": "object:9434"
               },
               {
                 "value": "Protocol Buffer",
                 "displayName": "Protocol Buffer",
-                "$$hashKey": "object:12894"
+                "$$hashKey": "object:9435"
               },
               {
                 "value": "Common Lisp",
                 "displayName": "Common Lisp",
-                "$$hashKey": "object:12895"
+                "$$hashKey": "object:9436"
               },
               {
                 "value": "Haxe",
                 "displayName": "Haxe",
-                "$$hashKey": "object:12896"
+                "$$hashKey": "object:9437"
               },
               {
                 "value": "Verilog",
                 "displayName": "Verilog",
-                "$$hashKey": "object:12897"
+                "$$hashKey": "object:9438"
               },
               {
                 "value": "Fortran",
                 "displayName": "Fortran",
-                "$$hashKey": "object:12898"
+                "$$hashKey": "object:9439"
               },
               {
                 "value": "Dart",
                 "displayName": "Dart",
-                "$$hashKey": "object:12899"
+                "$$hashKey": "object:9440"
               },
               {
                 "value": "PLpgSQL",
                 "displayName": "PLpgSQL",
-                "$$hashKey": "object:12900"
+                "$$hashKey": "object:9441"
               },
               {
                 "value": "Cuda",
                 "displayName": "Cuda",
-                "$$hashKey": "object:12901"
+                "$$hashKey": "object:9442"
               },
               {
                 "value": "Nginx",
                 "displayName": "Nginx",
-                "$$hashKey": "object:12902"
+                "$$hashKey": "object:9443"
               },
               {
                 "value": "VHDL",
                 "displayName": "VHDL",
-                "$$hashKey": "object:12903"
+                "$$hashKey": "object:9444"
               },
               {
                 "value": "Scheme",
                 "displayName": "Scheme",
-                "$$hashKey": "object:12904"
+                "$$hashKey": "object:9445"
               },
               {
                 "value": "SQF",
                 "displayName": "SQF",
-                "$$hashKey": "object:12905"
+                "$$hashKey": "object:9446"
               },
               {
                 "value": "Objective-C++",
                 "displayName": "Objective-C++",
-                "$$hashKey": "object:12906"
+                "$$hashKey": "object:9447"
               },
               {
                 "value": "Smarty",
                 "displayName": "Smarty",
-                "$$hashKey": "object:12907"
+                "$$hashKey": "object:9448"
               },
               {
                 "value": "PureScript",
                 "displayName": "PureScript",
-                "$$hashKey": "object:12908"
+                "$$hashKey": "object:9449"
               },
               {
                 "value": "QML",
                 "displayName": "QML",
-                "$$hashKey": "object:12909"
+                "$$hashKey": "object:9450"
               },
               {
                 "value": "D",
                 "displayName": "D",
-                "$$hashKey": "object:12910"
+                "$$hashKey": "object:9451"
               },
               {
                 "value": "Rascal",
                 "displayName": "Rascal",
-                "$$hashKey": "object:12911"
+                "$$hashKey": "object:9452"
               },
               {
                 "value": "ActionScript",
                 "displayName": "ActionScript",
-                "$$hashKey": "object:12912"
+                "$$hashKey": "object:9453"
               },
               {
                 "value": "Crystal",
                 "displayName": "Crystal",
-                "$$hashKey": "object:12913"
+                "$$hashKey": "object:9454"
               },
               {
                 "value": "Smali",
                 "displayName": "Smali",
-                "$$hashKey": "object:12914"
+                "$$hashKey": "object:9455"
               },
               {
                 "value": "PLSQL",
                 "displayName": "PLSQL",
-                "$$hashKey": "object:12915"
+                "$$hashKey": "object:9456"
               },
               {
                 "value": "ShaderLab",
                 "displayName": "ShaderLab",
-                "$$hashKey": "object:12916"
+                "$$hashKey": "object:9457"
               },
               {
                 "value": "Puppet",
                 "displayName": "Puppet",
-                "$$hashKey": "object:12917"
+                "$$hashKey": "object:9458"
               },
               {
                 "value": "DIGITAL Command Language",
                 "displayName": "DIGITAL Command Language",
-                "$$hashKey": "object:12918"
+                "$$hashKey": "object:9459"
               },
               {
                 "value": "Smalltalk",
                 "displayName": "Smalltalk",
-                "$$hashKey": "object:12919"
+                "$$hashKey": "object:9460"
               },
               {
                 "value": "SQLPL",
                 "displayName": "SQLPL",
-                "$$hashKey": "object:12920"
+                "$$hashKey": "object:9461"
               },
               {
                 "value": "GDScript",
                 "displayName": "GDScript",
-                "$$hashKey": "object:12921"
+                "$$hashKey": "object:9462"
               },
               {
                 "value": "Prolog",
                 "displayName": "Prolog",
-                "$$hashKey": "object:12922"
+                "$$hashKey": "object:9463"
               },
               {
                 "value": "Vala",
                 "displayName": "Vala",
-                "$$hashKey": "object:12923"
+                "$$hashKey": "object:9464"
               },
               {
                 "value": "IDL",
                 "displayName": "IDL",
-                "$$hashKey": "object:12924"
+                "$$hashKey": "object:9465"
               },
               {
                 "value": "AutoHotkey",
                 "displayName": "AutoHotkey",
-                "$$hashKey": "object:12925"
+                "$$hashKey": "object:9466"
               },
               {
                 "value": "SourcePawn",
                 "displayName": "SourcePawn",
-                "$$hashKey": "object:12926"
+                "$$hashKey": "object:9467"
               },
               {
                 "value": "DM",
                 "displayName": "DM",
-                "$$hashKey": "object:12927"
+                "$$hashKey": "object:9468"
               },
               {
                 "value": "Nim",
                 "displayName": "Nim",
-                "$$hashKey": "object:12928"
+                "$$hashKey": "object:9469"
               },
               {
                 "value": "GLSL",
                 "displayName": "GLSL",
-                "$$hashKey": "object:12929"
+                "$$hashKey": "object:9470"
               },
               {
                 "value": "OpenSCAD",
                 "displayName": "OpenSCAD",
-                "$$hashKey": "object:12930"
+                "$$hashKey": "object:9471"
               },
               {
                 "value": "Perl 6",
                 "displayName": "Perl 6",
-                "$$hashKey": "object:12931"
+                "$$hashKey": "object:9472"
               },
               {
                 "value": "Apex",
                 "displayName": "Apex",
-                "$$hashKey": "object:12932"
+                "$$hashKey": "object:9473"
               },
               {
                 "value": "MATLAB",
                 "displayName": "MATLAB",
-                "$$hashKey": "object:12933"
+                "$$hashKey": "object:9474"
               },
               {
                 "value": "Logos",
                 "displayName": "Logos",
-                "$$hashKey": "object:12934"
+                "$$hashKey": "object:9475"
               },
               {
                 "value": "Vim Script",
                 "displayName": "Vim Script",
-                "$$hashKey": "object:12935"
+                "$$hashKey": "object:9476"
               },
               {
                 "value": "Tcl",
                 "displayName": "Tcl",
-                "$$hashKey": "object:12936"
+                "$$hashKey": "object:9477"
               },
               {
                 "value": "Mathematica",
                 "displayName": "Mathematica",
-                "$$hashKey": "object:12937"
+                "$$hashKey": "object:9478"
               },
               {
                 "value": "MQL4",
                 "displayName": "MQL4",
-                "$$hashKey": "object:12938"
+                "$$hashKey": "object:9479"
               },
               {
                 "value": "SaltStack",
                 "displayName": "SaltStack",
-                "$$hashKey": "object:12939"
+                "$$hashKey": "object:9480"
               },
               {
                 "value": "MQL5",
                 "displayName": "MQL5",
-                "$$hashKey": "object:12940"
+                "$$hashKey": "object:9481"
               },
               {
                 "value": "NSIS",
                 "displayName": "NSIS",
-                "$$hashKey": "object:12941"
+                "$$hashKey": "object:9482"
               },
               {
                 "value": "Yacc",
                 "displayName": "Yacc",
-                "$$hashKey": "object:12942"
+                "$$hashKey": "object:9483"
               },
               {
                 "value": "Racket",
                 "displayName": "Racket",
-                "$$hashKey": "object:12943"
+                "$$hashKey": "object:9484"
               },
               {
                 "value": "Metal",
                 "displayName": "Metal",
-                "$$hashKey": "object:12944"
+                "$$hashKey": "object:9485"
               },
               {
                 "value": "Gherkin",
                 "displayName": "Gherkin",
-                "$$hashKey": "object:12945"
+                "$$hashKey": "object:9486"
               },
               {
                 "value": "PostScript",
                 "displayName": "PostScript",
-                "$$hashKey": "object:12946"
+                "$$hashKey": "object:9487"
               },
               {
                 "value": "BitBake",
                 "displayName": "BitBake",
-                "$$hashKey": "object:12947"
+                "$$hashKey": "object:9488"
               },
               {
                 "value": "ColdFusion",
                 "displayName": "ColdFusion",
-                "$$hashKey": "object:12948"
+                "$$hashKey": "object:9489"
               },
               {
                 "value": "Max",
                 "displayName": "Max",
-                "$$hashKey": "object:12949"
+                "$$hashKey": "object:9490"
               },
               {
                 "value": "FreeMarker",
                 "displayName": "FreeMarker",
-                "$$hashKey": "object:12950"
+                "$$hashKey": "object:9491"
               },
               {
                 "value": "API Blueprint",
                 "displayName": "API Blueprint",
-                "$$hashKey": "object:12951"
+                "$$hashKey": "object:9492"
               },
               {
                 "value": "TSQL",
                 "displayName": "TSQL",
-                "$$hashKey": "object:12952"
+                "$$hashKey": "object:9493"
               },
               {
                 "value": "Jinja",
                 "displayName": "Jinja",
-                "$$hashKey": "object:12953"
+                "$$hashKey": "object:9494"
               },
               {
                 "value": "OpenEdge ABL",
                 "displayName": "OpenEdge ABL",
-                "$$hashKey": "object:12954"
+                "$$hashKey": "object:9495"
               },
               {
                 "value": "HLSL",
                 "displayName": "HLSL",
-                "$$hashKey": "object:12955"
+                "$$hashKey": "object:9496"
               },
               {
                 "value": "SuperCollider",
                 "displayName": "SuperCollider",
-                "$$hashKey": "object:12956"
+                "$$hashKey": "object:9497"
               },
               {
                 "value": "AGS Script",
                 "displayName": "AGS Script",
-                "$$hashKey": "object:12957"
+                "$$hashKey": "object:9498"
               },
               {
                 "value": "Idris",
                 "displayName": "Idris",
-                "$$hashKey": "object:12958"
+                "$$hashKey": "object:9499"
               },
               {
                 "value": "PigLatin",
                 "displayName": "PigLatin",
-                "$$hashKey": "object:12959"
+                "$$hashKey": "object:9500"
               },
               {
                 "value": "SAS",
                 "displayName": "SAS",
-                "$$hashKey": "object:12960"
+                "$$hashKey": "object:9501"
               },
               {
                 "value": "AutoIt",
                 "displayName": "AutoIt",
-                "$$hashKey": "object:12961"
+                "$$hashKey": "object:9502"
               },
               {
                 "value": "LLVM",
                 "displayName": "LLVM",
-                "$$hashKey": "object:12962"
+                "$$hashKey": "object:9503"
               },
               {
                 "value": "Stata",
                 "displayName": "Stata",
-                "$$hashKey": "object:12963"
+                "$$hashKey": "object:9504"
               },
               {
                 "value": "M",
                 "displayName": "M",
-                "$$hashKey": "object:12964"
+                "$$hashKey": "object:9505"
               },
               {
                 "value": "POV-Ray SDL",
                 "displayName": "POV-Ray SDL",
-                "$$hashKey": "object:12965"
+                "$$hashKey": "object:9506"
               },
               {
                 "value": "RobotFramework",
                 "displayName": "RobotFramework",
-                "$$hashKey": "object:12966"
+                "$$hashKey": "object:9507"
               },
               {
                 "value": "EJS",
                 "displayName": "EJS",
-                "$$hashKey": "object:12967"
+                "$$hashKey": "object:9508"
               },
               {
                 "value": "Awk",
                 "displayName": "Awk",
-                "$$hashKey": "object:12968"
+                "$$hashKey": "object:9509"
               },
               {
                 "value": "SRecode Template",
                 "displayName": "SRecode Template",
-                "$$hashKey": "object:12969"
+                "$$hashKey": "object:9510"
               },
               {
                 "value": "PureBasic",
                 "displayName": "PureBasic",
-                "$$hashKey": "object:12970"
+                "$$hashKey": "object:9511"
               },
               {
                 "value": "Game Maker Language",
                 "displayName": "Game Maker Language",
-                "$$hashKey": "object:12971"
+                "$$hashKey": "object:9512"
               },
               {
                 "value": "AppleScript",
                 "displayName": "AppleScript",
-                "$$hashKey": "object:12972"
+                "$$hashKey": "object:9513"
               },
               {
                 "value": "Nix",
                 "displayName": "Nix",
-                "$$hashKey": "object:12973"
+                "$$hashKey": "object:9514"
               },
               {
                 "value": "COBOL",
                 "displayName": "COBOL",
-                "$$hashKey": "object:12974"
+                "$$hashKey": "object:9515"
               },
               {
                 "value": "G-code",
                 "displayName": "G-code",
-                "$$hashKey": "object:12975"
+                "$$hashKey": "object:9516"
               },
               {
                 "value": "SMT",
                 "displayName": "SMT",
-                "$$hashKey": "object:12976"
+                "$$hashKey": "object:9517"
               },
               {
                 "value": "Haml",
                 "displayName": "Haml",
-                "$$hashKey": "object:12977"
+                "$$hashKey": "object:9518"
               },
               {
                 "value": "Hack",
                 "displayName": "Hack",
-                "$$hashKey": "object:12978"
+                "$$hashKey": "object:9519"
               },
               {
                 "value": "Hy",
                 "displayName": "Hy",
-                "$$hashKey": "object:12979"
+                "$$hashKey": "object:9520"
               },
               {
                 "value": "Arc",
                 "displayName": "Arc",
-                "$$hashKey": "object:12980"
+                "$$hashKey": "object:9521"
               },
               {
                 "value": "LabVIEW",
                 "displayName": "LabVIEW",
-                "$$hashKey": "object:12981"
+                "$$hashKey": "object:9522"
               },
               {
                 "value": "nesC",
                 "displayName": "nesC",
-                "$$hashKey": "object:12982"
+                "$$hashKey": "object:9523"
               },
               {
                 "value": "PAWN",
                 "displayName": "PAWN",
-                "$$hashKey": "object:12983"
+                "$$hashKey": "object:9524"
               },
               {
                 "value": "Ren'Py",
                 "displayName": "Ren'Py",
-                "$$hashKey": "object:12984"
+                "$$hashKey": "object:9525"
               },
               {
                 "value": "Zephir",
                 "displayName": "Zephir",
-                "$$hashKey": "object:12985"
+                "$$hashKey": "object:9526"
               },
               {
                 "value": "Gosu",
                 "displayName": "Gosu",
-                "$$hashKey": "object:12986"
+                "$$hashKey": "object:9527"
               },
               {
                 "value": "WebAssembly",
                 "displayName": "WebAssembly",
-                "$$hashKey": "object:12987"
+                "$$hashKey": "object:9528"
               },
               {
                 "value": "Pure Data",
                 "displayName": "Pure Data",
-                "$$hashKey": "object:12988"
+                "$$hashKey": "object:9529"
               },
               {
                 "value": "RAML",
                 "displayName": "RAML",
-                "$$hashKey": "object:12989"
+                "$$hashKey": "object:9530"
               },
               {
                 "value": "Liquid",
                 "displayName": "Liquid",
-                "$$hashKey": "object:12990"
+                "$$hashKey": "object:9531"
               },
               {
                 "value": "Web Ontology Language",
                 "displayName": "Web Ontology Language",
-                "$$hashKey": "object:12991"
+                "$$hashKey": "object:9532"
               },
               {
                 "value": "Meson",
                 "displayName": "Meson",
-                "$$hashKey": "object:12992"
+                "$$hashKey": "object:9533"
               },
               {
                 "value": "ABAP",
                 "displayName": "ABAP",
-                "$$hashKey": "object:12993"
+                "$$hashKey": "object:9534"
               },
               {
                 "value": "AMPL",
                 "displayName": "AMPL",
-                "$$hashKey": "object:12994"
+                "$$hashKey": "object:9535"
               },
               {
                 "value": "Lex",
                 "displayName": "Lex",
-                "$$hashKey": "object:12995"
+                "$$hashKey": "object:9536"
               },
               {
                 "value": "ANTLR",
                 "displayName": "ANTLR",
-                "$$hashKey": "object:12996"
+                "$$hashKey": "object:9537"
               },
               {
                 "value": "GAP",
                 "displayName": "GAP",
-                "$$hashKey": "object:12997"
+                "$$hashKey": "object:9538"
               },
               {
                 "value": "Ring",
                 "displayName": "Ring",
-                "$$hashKey": "object:12998"
+                "$$hashKey": "object:9539"
               },
               {
                 "value": "MoonScript",
                 "displayName": "MoonScript",
-                "$$hashKey": "object:12999"
+                "$$hashKey": "object:9540"
               },
               {
                 "value": "CartoCSS",
                 "displayName": "CartoCSS",
-                "$$hashKey": "object:13000"
+                "$$hashKey": "object:9541"
               },
               {
                 "value": "Objective-J",
                 "displayName": "Objective-J",
-                "$$hashKey": "object:13001"
+                "$$hashKey": "object:9542"
               },
               {
                 "value": "Xtend",
                 "displayName": "Xtend",
-                "$$hashKey": "object:13002"
+                "$$hashKey": "object:9543"
               },
               {
                 "value": "Standard ML",
                 "displayName": "Standard ML",
-                "$$hashKey": "object:13003"
+                "$$hashKey": "object:9544"
               },
               {
                 "value": "Terra",
                 "displayName": "Terra",
-                "$$hashKey": "object:13004"
+                "$$hashKey": "object:9545"
               },
               {
                 "value": "Visual Basic .NET",
                 "displayName": "Visual Basic .NET",
-                "$$hashKey": "object:13005"
+                "$$hashKey": "object:9546"
               },
               {
                 "value": "SystemVerilog",
                 "displayName": "SystemVerilog",
-                "$$hashKey": "object:13006"
+                "$$hashKey": "object:9547"
               },
               {
                 "value": "GAMS",
                 "displayName": "GAMS",
-                "$$hashKey": "object:13007"
+                "$$hashKey": "object:9548"
               },
               {
                 "value": "Stylus",
                 "displayName": "Stylus",
-                "$$hashKey": "object:13008"
+                "$$hashKey": "object:9549"
               },
               {
                 "value": "Pug",
                 "displayName": "Pug",
-                "$$hashKey": "object:13009"
+                "$$hashKey": "object:9550"
               },
               {
                 "value": "APL",
                 "displayName": "APL",
-                "$$hashKey": "object:13010"
+                "$$hashKey": "object:9551"
               },
               {
                 "value": "ooc",
                 "displayName": "ooc",
-                "$$hashKey": "object:13011"
+                "$$hashKey": "object:9552"
               },
               {
                 "value": "Bro",
                 "displayName": "Bro",
-                "$$hashKey": "object:13012"
+                "$$hashKey": "object:9553"
               },
               {
                 "value": "LilyPond",
                 "displayName": "LilyPond",
-                "$$hashKey": "object:13013"
+                "$$hashKey": "object:9554"
               },
               {
                 "value": "SWIG",
                 "displayName": "SWIG",
-                "$$hashKey": "object:13014"
+                "$$hashKey": "object:9555"
               },
               {
                 "value": "Rebol",
                 "displayName": "Rebol",
-                "$$hashKey": "object:13015"
+                "$$hashKey": "object:9556"
               },
               {
                 "value": "Agda",
                 "displayName": "Agda",
-                "$$hashKey": "object:13016"
+                "$$hashKey": "object:9557"
               },
               {
                 "value": "Nextflow",
                 "displayName": "Nextflow",
-                "$$hashKey": "object:13017"
+                "$$hashKey": "object:9558"
               },
               {
                 "value": "Gnuplot",
                 "displayName": "Gnuplot",
-                "$$hashKey": "object:13018"
+                "$$hashKey": "object:9559"
               },
               {
                 "value": "XQuery",
                 "displayName": "XQuery",
-                "$$hashKey": "object:13019"
+                "$$hashKey": "object:9560"
               },
               {
                 "value": "M4",
                 "displayName": "M4",
-                "$$hashKey": "object:13020"
+                "$$hashKey": "object:9561"
               },
               {
                 "value": "Propeller Spin",
                 "displayName": "Propeller Spin",
-                "$$hashKey": "object:13021"
+                "$$hashKey": "object:9562"
               },
               {
                 "value": "NetLogo",
                 "displayName": "NetLogo",
-                "$$hashKey": "object:13022"
+                "$$hashKey": "object:9563"
               },
               {
                 "value": "Volt",
                 "displayName": "Volt",
-                "$$hashKey": "object:13023"
+                "$$hashKey": "object:9564"
               },
               {
                 "value": "VBA",
                 "displayName": "VBA",
-                "$$hashKey": "object:13024"
+                "$$hashKey": "object:9565"
               },
               {
                 "value": "LSL",
                 "displayName": "LSL",
-                "$$hashKey": "object:13025"
+                "$$hashKey": "object:9566"
               },
               {
                 "value": "Modelica",
                 "displayName": "Modelica",
-                "$$hashKey": "object:13026"
+                "$$hashKey": "object:9567"
               },
               {
                 "value": "Ada",
                 "displayName": "Ada",
-                "$$hashKey": "object:13027"
+                "$$hashKey": "object:9568"
               },
               {
                 "value": "Raku",
                 "displayName": "Raku",
-                "$$hashKey": "object:13028"
+                "$$hashKey": "object:9569"
               },
               {
                 "value": "1C Enterprise",
                 "displayName": "1C Enterprise",
-                "$$hashKey": "object:13029"
+                "$$hashKey": "object:9570"
               },
               {
                 "value": "Nemerle",
                 "displayName": "Nemerle",
-                "$$hashKey": "object:13030"
+                "$$hashKey": "object:9571"
               },
               {
                 "value": "Forth",
                 "displayName": "Forth",
-                "$$hashKey": "object:13031"
+                "$$hashKey": "object:9572"
               },
               {
                 "value": "Monkey C",
                 "displayName": "Monkey C",
-                "$$hashKey": "object:13032"
+                "$$hashKey": "object:9573"
               },
               {
                 "value": "Alloy",
                 "displayName": "Alloy",
-                "$$hashKey": "object:13033"
+                "$$hashKey": "object:9574"
               },
               {
                 "value": "PogoScript",
                 "displayName": "PogoScript",
-                "$$hashKey": "object:13034"
+                "$$hashKey": "object:9575"
               },
               {
                 "value": "Redcode",
                 "displayName": "Redcode",
-                "$$hashKey": "object:13035"
+                "$$hashKey": "object:9576"
               },
               {
                 "value": "Papyrus",
                 "displayName": "Papyrus",
-                "$$hashKey": "object:13036"
+                "$$hashKey": "object:9577"
               },
               {
                 "value": "Thrift",
                 "displayName": "Thrift",
-                "$$hashKey": "object:13037"
+                "$$hashKey": "object:9578"
               },
               {
                 "value": "Twig",
                 "displayName": "Twig",
-                "$$hashKey": "object:13038"
+                "$$hashKey": "object:9579"
               },
               {
                 "value": "Ceylon",
                 "displayName": "Ceylon",
-                "$$hashKey": "object:13039"
+                "$$hashKey": "object:9580"
               },
               {
                 "value": "Isabelle",
                 "displayName": "Isabelle",
-                "$$hashKey": "object:13040"
+                "$$hashKey": "object:9581"
               },
               {
                 "value": "Red",
                 "displayName": "Red",
-                "$$hashKey": "object:13041"
+                "$$hashKey": "object:9582"
               },
               {
                 "value": "Slash",
                 "displayName": "Slash",
-                "$$hashKey": "object:13042"
+                "$$hashKey": "object:9583"
               },
               {
                 "value": "Sass",
                 "displayName": "Sass",
-                "$$hashKey": "object:13043"
+                "$$hashKey": "object:9584"
               },
               {
                 "value": "LiveScript",
                 "displayName": "LiveScript",
-                "$$hashKey": "object:13044"
+                "$$hashKey": "object:9585"
               },
               {
                 "value": "Clarion",
                 "displayName": "Clarion",
-                "$$hashKey": "object:13045"
+                "$$hashKey": "object:9586"
               },
               {
                 "value": "DTrace",
                 "displayName": "DTrace",
-                "$$hashKey": "object:13046"
+                "$$hashKey": "object:9587"
               },
               {
                 "value": "QMake",
                 "displayName": "QMake",
-                "$$hashKey": "object:13047"
+                "$$hashKey": "object:9588"
               },
               {
                 "value": "Eiffel",
                 "displayName": "Eiffel",
-                "$$hashKey": "object:13048"
+                "$$hashKey": "object:9589"
               },
               {
                 "value": "RPC",
                 "displayName": "RPC",
-                "$$hashKey": "object:13049"
+                "$$hashKey": "object:9590"
               },
               {
                 "value": "Lean",
                 "displayName": "Lean",
-                "$$hashKey": "object:13050"
+                "$$hashKey": "object:9591"
               },
               {
                 "value": "Coq",
                 "displayName": "Coq",
-                "$$hashKey": "object:13051"
+                "$$hashKey": "object:9592"
               },
               {
                 "value": "LookML",
                 "displayName": "LookML",
-                "$$hashKey": "object:13052"
+                "$$hashKey": "object:9593"
               },
               {
                 "value": "MAXScript",
                 "displayName": "MAXScript",
-                "$$hashKey": "object:13053"
+                "$$hashKey": "object:9594"
               },
               {
                 "value": "Io",
                 "displayName": "Io",
-                "$$hashKey": "object:13054"
+                "$$hashKey": "object:9595"
               }
             ],
             "name": "Choose Language",
             "displayName": "Choose Language",
             "defaultValue": "JavaScript",
             "hidden": false,
-            "$$hashKey": "object:12834"
+            "$$hashKey": "object:9367"
           }
         }
       },
@@ -2902,16 +2864,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201046_271115538",
+      "jobName": "paragraph_1670229564976_1512335302",
       "id": "paragraph_1668813939731_46476096",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12643"
+      "$$hashKey": "object:8942"
     },
     {
       "text": "print(\"%html <h2> Licenses </h2>\")\nval licensedReposNumber = spark.sql(\n    \"(select \\\"Licensed\\\", sum(repositories) as Number_repostories from (select count(_c13) as repositories from csv.`/user/hduser/data.csv` where _c13 != \\\"NULL\\\" group by _c13))\" \n    +\n    \"union\"\n    +\n    \"(select \\\"NonLicensed\\\", sum(repositories) as Number_repostories from (select count(_c13) as repositories from csv.`/user/hduser/data.csv` where _c13 == \\\"NULL\\\" group by _c13))\"\n\n)\nz.show(licensedReposNumber)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "dateUpdated": "2022-12-05T08:39:24+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -3067,16 +3029,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201046_1673446452",
+      "jobName": "paragraph_1670229564976_1009802321",
       "id": "paragraph_1668960291532_1132312118",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12644"
+      "$$hashKey": "object:8943"
     },
     {
       "text": "print(\"%html <h2> Licenses </h2>\")\nval licensedReposNumber = spark.sql(\n    \"select _c13 as license, count(_c13) as repositories from csv.`/user/hduser/data.csv` where _c13 != \\\"NULL\\\" group by _c13 order by CAST(repositories AS long) desc\"\n)\nz.show(licensedReposNumber)",
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "dateUpdated": "2022-12-05T08:39:24+0000",
       "progress": 0,
       "config": {
         "lineNumbers": false,
@@ -3228,15 +3190,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201046_894736470",
+      "jobName": "paragraph_1670229564976_431370822",
       "id": "paragraph_1668955713694_2007649610",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12645"
+      "$$hashKey": "object:8944"
     },
     {
       "user": "anonymous",
-      "dateUpdated": "2022-12-03T11:16:41+0000",
+      "dateUpdated": "2022-12-05T08:39:24+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -3258,14 +3220,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670066201046_1539183660",
+      "jobName": "paragraph_1670229564977_642401172",
       "id": "paragraph_1668960075728_1005848045",
-      "dateCreated": "2022-12-03T11:16:41+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
       "status": "READY",
-      "$$hashKey": "object:12646"
+      "$$hashKey": "object:8945"
     },
     {
+      "text": "print(\"%html <h2> Top 10 repositories by number of open_issues </h2>\")\nval repositories = spark.sql(\n    \"select distinct(_c0) as repositories, count(_c10) as totalOpenIssues from csv.`/user/hduser/data.csv` where _c10 != \\\"NULL\\\" group by repositories order by CAST(totalOpenIssues AS long) desc limit 10\"\n)\nz show repositories",
       "user": "anonymous",
+      "dateUpdated": "2022-12-05T08:46:34+0000",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -3277,39 +3241,36 @@
         "colWidth": 12,
         "editorMode": "ace/mode/scala",
         "fontSize": 9,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670069621821_863011197",
-      "id": "paragraph_1670069621821_863011197",
-      "dateCreated": "2022-12-03T12:13:41+0000",
-      "status": "READY",
-      "focus": true,
-      "$$hashKey": "object:18055",
-      "text": "print(\"%html <h2> Top 10 repositories by number of commits </h2>\")\nval languages = spark.sql(\n    \"select distinct(_c0) as repositories, count(_c11) as totalCommits from csv.`/user/hduser/data.csv` where _c11 != \\\"NULL\\\" group by repositories order by CAST(totalCommits AS long) desc limit 10\"\n)\nz show repositories",
-      "dateUpdated": "2022-12-03T12:13:46+0000"
-    },
-    {
-      "user": "anonymous",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "scala",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "repositories": "string",
+                      "totalOpenIssues": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
         },
-        "colWidth": 12,
-        "editorMode": "ace/mode/scala",
-        "fontSize": 9,
-        "results": {},
         "enabled": true
       },
       "settings": {
@@ -3317,20 +3278,84 @@
         "forms": {}
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://localhost:40007/jobs",
+              "$$hashKey": "object:18658"
+            },
+            {
+              "jobUrl": "http://localhost:40007/jobs",
+              "$$hashKey": "object:18659"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1670069632935_1947795059",
+      "jobName": "paragraph_1670229564977_549796582",
       "id": "paragraph_1670069632935_1947795059",
-      "dateCreated": "2022-12-03T12:13:52+0000",
+      "dateCreated": "2022-12-05T08:39:24+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:8947",
+      "dateFinished": "2022-12-05T08:46:33+0000",
+      "dateStarted": "2022-12-05T08:45:45+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<h2> Top 10 repositories by number of open_issues </h2>\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "repositories\ttotalOpenIssues\nhello-world\t895\nimad-app\t488\ntest\t422\n-\t138\nblog\t122\ndatasharing\t119\ntensorflow\t112\nCCW3970-Build-Debug-Outbound-REST-App\t112\ndatasciencecoursera\t111\nHello-World\t109\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mrepositories\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [repositories: string, totalOpenIssues: bigint]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670229945192_1603543713",
+      "id": "paragraph_1670229945192_1603543713",
+      "dateCreated": "2022-12-05T08:45:45+0000",
       "status": "READY",
       "focus": true,
-      "$$hashKey": "object:18137",
-      "text": "print(\"%html <h2> Top 10 repositories by number of open_issues </h2>\")\nval languages = spark.sql(\n    \"select distinct(_c0) as repositories, count(_c10) as totalOpenIssues from csv.`/user/hduser/data.csv` where _c10 != \\\"NULL\\\" group by repositories order by CAST(totalOpenIssues AS long) desc limit 10\"\n)\nz show repositories",
-      "dateUpdated": "2022-12-03T12:13:56+0000"
+      "$$hashKey": "object:17056"
     }
   ],
   "name": "123",
-  "id": "2HJYA3Y34",
+  "id": "2HJXGN32W",
   "defaultInterpreterGroup": "spark",
   "version": "0.10.0",
   "noteParams": {},
